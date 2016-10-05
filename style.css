@@ -225,6 +225,7 @@ body {
     font-family:ralewaylight;           /*setting the default body font to Raleway Light*/
     font-size:16px;
     font-color:#2d2d2d;
+
 }
 
 h1 {
@@ -246,54 +247,48 @@ h3 {
 HEADER
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-header{
-    overflow:hidden;
-    padding-top:10px;
-    padding-bottom:10px;
+.containerHeader{
+
+
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    align-item:center;
+
+
+
 
 }
 
 .logo {                 /*this floats the logo container to the left*/
-        float:left;
-        width:225px;
+
+
         padding-top:10px;
         padding-left:20px;
+
+
+
 }
 
 .logo img{              /*sizes the image in the logo container*/
-    width:170px
+    width:140px;
+
 }
 
 
 .cart {                 /*this floats the cart container to the right*/
-       float:right;
+
         padding-top:10px;
         padding-right:20px;
 }
 
 
 .cart img{              /*sizes the image in the cart container*/
-        width:50px
+    width:55px;
 }
 
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-CLEARFIX
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-.clearfix:after {       /*clearfix is used to clear floating objects in a container*/
-    content: "";
-    clear: both;
-    display:block;
-}
 
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-CONTAINER
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-.container {
-    max-width:1240px;
-    margin: 0 auto;
-    width: 100%;
-}
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 HERO-BANNER
@@ -305,19 +300,24 @@ HERO-BANNER
     background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
     url("assets/images/banner-girl.png") no-repeat center,
     url("assets/images/flower-bkgd.jpg");
-    background-size: contain;
+    width:100%;
     height:550px;       /*settings for gradient taken from Mandi Wise Aloha site*/
-    position:relative;  /* see Stack Overflow http://stackoverflow.com/questions/16589519/use-css-gradient-over-background-image*/
+     /* see Stack Overflow http://stackoverflow.com/questions/16589519/use-css-gradient-over-background-image*/
+    display:flex;
+
 
 
 }
 
 .banner-text-container {    /*box within the hero-banner*/
-    position:absolute;
+
     width:100%;
     top:50%;
     text-align:center;
-    color:white
+    color:white;
+    justify-content: center;
+    align-self:center;
+
 }
 
 .newCollection{
@@ -340,6 +340,11 @@ HAND-CRAFTED
 
     align:center;
     height:275px;
+    display:flex;
+    justify-content:center;
+    content-align:center;
+    width:100%;
+
 
 }
 
@@ -348,12 +353,14 @@ HAND-CRAFTED
     padding-top:50px;
     padding-bottom: 50px;
     text-align:center;
+
 }
 
 .handCraftedcontainer p {
     line-height:200%;
     padding-bottom:70px;
     font-size:18px;
+
 }
 
 .boldWord {             /*bolds a word using span tag*/
@@ -363,7 +370,53 @@ HAND-CRAFTED
 .handcrafted hr {       /*this is a line at the bottom of the section*/
     margin-bottom:1px;
     color:#d7d7d7;
+    width:100%;
 }
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+PRODUCT-LINE
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+.productLine {
+
+}
+
+.mens {
+
+background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+url(assets/images/sale-category.jpg) no-repeat center center;
+}
+
+.trends {
+background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+url(assets/images/sale-category.jpg) no-repeat center center;
+
+}
+
+.glasses {
+
+background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+url(assets/images/sale-category.jpg) no-repeat center center;
+}
+
+
+.sale {
+background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+url(../images/sale-category.jpg) no-repeat center center;
+}
+
+.bags {
+background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+url(assets/images/sale-category.jpg) no-repeat center center;
+
+}
+
+.women {
+background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+url(assets/images/sale-category.jpg) no-repeat center center;
+
+}
+
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 MOST-LOVED
@@ -371,8 +424,11 @@ MOST-LOVED
 .mostLoved {
     height:575px;
     display:inline-block;
+    width:100%;
+
 
 }
+
 
 .mostLoved div{                 /*a box within mostLoved*/
     display:inline-block;
@@ -386,7 +442,6 @@ MOST-LOVED
     margin-top:50px;
     margin-bottom:50px;
 }
-
 .product {                  /*these are the product boxes which hole an image and some text*/
     display:inline-block;
     text-align:center;
@@ -398,6 +453,7 @@ MOST-LOVED
     width:100%;
 
 }
+
 
 .productType {
     color:#969696;
@@ -430,12 +486,11 @@ WAVE-BANNER
 .wave-banner {
     text-align: center;
     background: linear-gradient( to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.15) 100% ),
-    url('assets/images/wave-bkgd.jpg') no-repeat center;
-    /*height: 494px;
-    height:350px;*/
+    url('assets/images/wave-bkgd.jpg') no-repeat center bottom;
     position:relative; /*settings for gradient taken from Mandi Wise Aloha site*/
     padding: 4rem 0;
     display:block;
+
 
 }
 
@@ -443,7 +498,7 @@ WAVE-BANNER
 
     text-align:center;
     color:white;
-    display:block;
+    display:inline-block;
     margin-top:30px;
 
 
@@ -454,6 +509,7 @@ WAVE-BANNER
     line-height: 200%;
     padding-bottom: 30px;
     font-size: 18px;
+
 
 }
 
@@ -531,20 +587,26 @@ SUBSCRIBE FORM
 FOOTER
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-footer {
-    display:block;
-    overflow:hidden;
+.footerContainer{
+
     background:#242424;
     padding: 4rem 0;
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+
+
+
 }
 
 .social {
+    padding-right:10px;
 
-    float:right;
-    padding-right:5px;
+}
 
+.social li{
 
-
+    padding-bottom:10px;
 }
 .social i {         /*these are the icons*/
     color:white;
@@ -555,12 +617,13 @@ footer {
 
     color:white;
     text-decoration:none;
-
-
 }
 
-a i:hover {
+a:hover {
 
+    color: #b64036;
+}
+i:hover{
     color: #b64036;
 }
 
@@ -572,13 +635,13 @@ a i:hover {
 
 .companyInfo {
     color:white;
-    float:left;
     font-family:playfair_displayregular;
-    padding-left:10px;
+
 
 }
 .companyInfo div{
     padding-bottom:10px;
+    padding-left:10px;
 }
 
 .contact a {
@@ -604,8 +667,23 @@ BREAKPOINTS
 Tablet Display
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-@media all and (min-width:481px) and (max-width:600px) {
-    .product {
+@media all and (min-width:601px) and (max-width:1240px){
+
+
+    .wave-banner {
+        text-align: center;
+        background: linear-gradient( to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.15) 100% ),
+        url('assets/images/wave-bkgd.jpg') no-repeat center;
+        position:relative; /*settings for gradient taken from Mandi Wise Aloha site*/
+        padding: 4rem 0;
+        display:block;
+        width:100%;
+
+    }
+
+
+
+        .product {
         display: inline-block;
         text-align: center;
         width: 48%;
@@ -613,7 +691,38 @@ Tablet Display
     }
     .product img {
         width: 100%;
+        background-position:bottom;
     }
+
+    .mostLoved div{                 /*a box within mostLoved*/
+        display:inline-block;
+        text-align:center;
+        line-height: 200%;
+
+
+    }
+
+    .footerContainer {
+        background:#242424;
+        padding: 4rem 0;
+        display:inline-block;
+        width:100%;
+        text-align:center;
+
+    }
+    .companyInfo{
+        padding-bottom:20px;
+    }
+    .social a{
+        display:none;
+    }
+    .social li{
+        display:inline-block;
+        display:inline;
+    }
+
+
+
 }
 
 
@@ -622,54 +731,99 @@ Tablet Display
 Small Display
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-@media all and (max-width:480px) {
+@media all and (max-width:600px) {
 
-    .mostLoved h2 {
-        margin-top: 10px;
-        margin-bottom: 50px;
-    }
 
-    .product {
-        text-align: center;
-        width: 100%;
-    }
 
-    .banner-text-container {
-        position: relative;
-        width: 100%;
-        top: 50%;
-        text-align: center;
-        color: white
-    }
 
-    .newCollection {
-
-        font-size: 20px;
-        font-family: ralewaymedium;
-
-    }
 
     .springSummer {
 
-        font-size: 40px;
+        font-size: 50px;
         font-family: playfair_displayregular;
     }
 
-    footer {
-        display:block;
-        overflow:hidden;
-        text-align:left;
+    .handCrafted {
+
+        align:center;
+        height:300px;
+        display:flex;
+        justify-content:center;
+        content-align:center;
+
+
+    }
+
+    .mostLoved h2{
+        margin-top:50px;
+        margin-bottom:50px;
+        font-size:35px;
+    }
+    .product {                  /*these are the product boxes which hole an image and some text*/
+        display:inline-block;
+        text-align:center;
+        width:50%;
+
+    }
+
+/*===================================================*/
+
+    .subscribe{
+width:100%;
+    }
+
+    .subscribeForm{
+
+        display: block;
+        margin: 0.5rem auto 0;
+        position: relative;
+        width:270px;
+        padding-right: 40px;
+        position:relative;
+    }
+
+
+    #subscribe {
+        background-color: #e2574c;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        padding: .25rem 1.3rem;
+        position: absolute;
+        right: -10px;
+        top: .25rem;
+        border: 0;
+        border-radius: 25px;
+        font-family: ralewaylight, sans-serif;
+        font-size: 1rem;
+        font-style: normal;
+        line-height: 2;
 
     }
 
 
-    .companyInfo {
-        color:white;
-        float:left;
-        font-family:playfair_displayregular;
-        padding-left:10px;
+    /*====================================================*/
+
+    .footerContainer {
+        background:#242424;
+        padding: 4rem 0;
+        display:inline-block;
+        width:100%;
+        text-align:center;
+
 
     }
+    .companyInfo{
+        padding-bottom:20px;
+
+    }
+    .social a{
+       display:none;
+    }
+    .social li{
+        display:inline-block;
+        display:inline;
+}
 
 }
 
