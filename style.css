@@ -247,31 +247,54 @@ h3 {
 HEADER
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-.containerHeader{
+.containerHeader {
 
-
-    display:flex;
-    justify-content:space-between;
-    width:100%;
-    align-item:center;
-
-
-
-
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
 }
 
 .logo {                 /*this floats the logo container to the left*/
 
-
-        padding-top:10px;
-        padding-left:20px;
-
-
+    padding-top:10px;
+    padding-left:20px;
 
 }
 
 .logo img{              /*sizes the image in the logo container*/
     width:140px;
+
+}
+
+.website-navigation {
+
+    width:300px;
+    display:flex;
+    justify-content:center;
+
+
+}
+
+.website-navigation ul{
+    display:flex;
+    justify-content:space-between;
+    width:300px;
+
+
+}
+
+.website-navigation li {
+    align-item:center;
+    display:flex;
+    justify-content: space-between;
+
+
+}
+.website-navigation a{
+    text-decoration:none;
+    color:#b64036;
+    justify-content:space-between;
+
 
 }
 
@@ -367,54 +390,143 @@ HAND-CRAFTED
     font-weight:bold;
     font-family:playfair_displaybold;
 }
-.handcrafted hr {       /*this is a line at the bottom of the section*/
-    margin-bottom:1px;
-    color:#d7d7d7;
-    width:100%;
+.handcrafted hr { /*this is a line at the bottom of the section*/
+    margin-bottom: 1px;
+    color: #d7d7d7;
+    width: 100%;
 }
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-PRODUCT-LINE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+PRODUCT-LINE IMAGES
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
 .productLine {
+    display:flex;
+    flex-flow:row wrap;
+    width:100%;
+    justify-content:center;
+
+
+
 
 }
+.productLine div{
+    height:300px;
+    justify-content: center;
+    align-self:center;
+    display:flex;
+
+
+
+
+}
+.productTypes {
+    display: flex;
+    justify-content:center;
+
+
+
+}
+
+
+.productTypes a {
+   font-size:18px;
+    text-decoration:none;
+    color:white;
+    display:flex;
+
+
+
+}
+
 
 .mens {
 
 background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
-url(assets/images/sale-category.jpg) no-repeat center center;
+url(assets/images/mens-category.jpg) no-repeat;
+    flex:2 1 50%;
+    background-size:cover;
+    display:flex;
+
+
 }
+
+.mens a {
+
+    align-self:center;
+    text-transform:uppercase;
+}
+
 
 .trends {
 background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
-url(assets/images/sale-category.jpg) no-repeat center center;
+url(assets/images/trends-category.jpg) no-repeat center center;
+    flex:1 1 25%;
+    display:flex;
 
+
+}
+
+.trends a{
+
+    align-self:center;
+    text-transform:uppercase;
 }
 
 .glasses {
 
 background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
-url(assets/images/sale-category.jpg) no-repeat center center;
+url(assets/images/glasses-category.jpg) no-repeat center center;
+    flex:1 1 25%;
+    display:flex;
+}
+
+.glasses a{
+
+    align-self:center;
+    text-transform:uppercase;
 }
 
 
 .sale {
 background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
-url(../images/sale-category.jpg) no-repeat center center;
+url(assets/images/sale-category.jpg) no-repeat center center;
+    flex:2 1 25%;
+    display:flex;
+
+
+}
+
+.sale a{
+
+    align-self:center;
+    text-transform:uppercase;
 }
 
 .bags {
 background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
-url(assets/images/sale-category.jpg) no-repeat center center;
+url(assets/images/bags-category.jpg) no-repeat center center;
+    flex:1 1 25%;
+    display:flex;
+}
 
+.bags a{
+
+    align-self:center;
+    text-transform:uppercase;
 }
 
 .women {
 background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
-url(assets/images/sale-category.jpg) no-repeat center center;
+url(assets/images/womens-category.jpg) no-repeat center center;
+    flex:1 1 50%;
+    display:flex;
+}
 
+.women a{
+
+    align-self:center;
+    text-transform:uppercase;
 }
 
 
@@ -681,9 +793,134 @@ Tablet Display
 
     }
 
+    .productLine {
+        display:flex;
+        flex-flow:row wrap;
+        width:100%;
+        justify-content:center;
 
 
-        .product {
+
+
+    }
+    .productLine div{
+        height:300px;
+        justify-content: center;
+        align-self:center;
+        display:flex;
+
+
+
+
+    }
+    .productTypes {
+        display: flex;
+
+
+
+    }
+
+
+    .productTypes a {
+        font-size:18px;
+        text-decoration:none;
+        color:white;
+        display:flex;
+
+
+
+    }
+    .mens {
+
+        background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+        url(assets/images/mens-category.jpg) no-repeat;
+        flex:1 1 100%;
+        background-size:cover;
+        display:flex;
+
+
+    }
+
+    .mens a{
+
+        align-self:center;
+        text-transform:uppercase;
+    }
+
+
+    .trends {
+        background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+        url(assets/images/trends-category.jpg) no-repeat center center;
+        flex:1 1 50%;
+        display:flex;
+
+
+    }
+
+    .trends a{
+
+        align-self:center;
+        text-transform:uppercase;
+    }
+
+    .glasses {
+
+        background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+        url(assets/images/glasses-category.jpg) no-repeat center center;
+        flex:1 1 50%;
+        display:flex;
+    }
+
+    .glasses a{
+
+        align-self:center;
+        text-transform:uppercase;
+    }
+
+
+    .sale {
+        background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+        url(assets/images/sale-category.jpg) no-repeat center center;
+        flex:1 1 50%;
+        display:flex;
+
+    }
+
+    .sale a{
+
+        align-self:center;
+        text-transform:uppercase;
+    }
+
+    .bags {
+        background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+        url(assets/images/bags-category.jpg) no-repeat center center;
+        flex:1 1 50%;
+        display:flex;
+    }
+
+    .bags a{
+
+        align-self:center;
+        text-transform:uppercase;
+    }
+
+    .women {
+        background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+        url(assets/images/womens-category.jpg) no-repeat center center;
+        flex:1 1 100%;
+        display:flex;
+    }
+
+    .women a{
+
+        align-self:center;
+        text-transform:uppercase;
+    }
+
+
+
+    .product {
         display: inline-block;
         text-align: center;
         width: 48%;
@@ -753,6 +990,139 @@ Small Display
 
 
     }
+
+    /* =============================================================================================
+PRODUCT LINE
+
+================================= */
+
+    .productLine {
+        display:flex;
+        flex-flow:row wrap;
+        width:100%;
+        justify-content:center;
+
+
+
+
+    }
+    .productLine div{
+        height:300px;
+        justify-content: center;
+        align-self:center;
+        display:flex;
+
+
+
+
+    }
+    .productTypes {
+        display: flex;
+
+
+
+    }
+
+    .productTypes a {
+        font-size:18px;
+        text-decoration:none;
+        color:white;
+        display:flex;
+
+
+
+    }
+    .mens {
+
+        background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+        url(assets/images/mens-category.jpg) no-repeat;
+        flex:1 1 100%;
+        background-size:cover;
+        display:flex;
+
+
+    }
+
+    .mens a{
+
+        align-self:center;
+        text-transform:uppercase;
+    }
+
+
+    .trends {
+        background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+        url(assets/images/trends-category.jpg) no-repeat center center;
+        flex:1 1 50%;
+        display:flex;
+
+
+    }
+
+    .trends a{
+
+        align-self:center;
+        text-transform:uppercase;
+    }
+
+    .glasses {
+
+        background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+        url(assets/images/glasses-category.jpg) no-repeat center center;
+        flex:1 1 50%;
+        display:flex;
+    }
+
+    .glasses a{
+
+        align-self:center;
+        text-transform:uppercase;
+    }
+
+
+    .sale {
+        background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+        url(assets/images/sale-category.jpg) no-repeat center center;
+        flex:1 1 50%;
+        display:flex;
+
+    }
+
+    .sale a{
+
+        align-self:center;
+        text-transform:uppercase;
+    }
+
+    .bags {
+        background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+        url(assets/images/bags-category.jpg) no-repeat center center;
+        flex:1 1 50%;
+        display:flex;
+    }
+
+    .bags a{
+
+        align-self:center;
+        text-transform:uppercase;
+    }
+
+    .women {
+        background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+        url(assets/images/womens-category.jpg) no-repeat center center;
+        flex:1 1 100%;
+        display:flex;
+    }
+
+    .women a{
+
+        align-self:center;
+        text-transform:uppercase;
+    }
+
+
+
+    /*========================================================*/
 
     .mostLoved h2{
         margin-top:50px;
