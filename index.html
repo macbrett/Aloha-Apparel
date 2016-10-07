@@ -3,11 +3,15 @@
 <head>
 
     <title>Document</title>
-    <link href="reset.css" rel="stylesheet">
+
+
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
                 rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
                 crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="main.js"></script>
+
+ 
 </head>
 
 <body>
@@ -92,7 +96,8 @@
             <ul>
                 <li class="productType">DRESSES</li>
                 <li class="productDescription">Stretch Knit Dress</li>
-                <li class="productPrice">$169.00</li>
+                <li class="productPrice" value="169.00">$169.00</li>
+                <button id="knitDressButton" onclick="addCart()">Add Item</button>
             </ul>
         </div>
 
@@ -101,7 +106,8 @@
             <ul>
                 <li class="productType">SHIRTS</li>
                 <li class="productDescription">Cotton Blue Shirt</li>
-                <li class="productPrice">$89.00</li>
+                <li class="productPrice" value="89.99">$89.00</li>
+                <button id="blueShirtButton" onclick="addCart()">Add Item</button>
             </ul>
         </div>
 
@@ -110,7 +116,8 @@
             <ul>
                 <li class="productType">DRESSES</li>
                 <li class="productDescription">Checked Stretched Dress</li>
-                <li class="productPrice">$129.00</li>
+                <li class="productPrice" id="dressPrice" value="129.00">$129.00</li>
+                <button id = "dressButton" onclick="addCart()">Add Item</button>
             </ul>
         </div>
 
@@ -119,7 +126,8 @@
             <ul>
                 <li class="productType">PACKS</li>
                 <li class="productDescription">Blue Hipster Backpack</li>
-                <li class="productPrice">$69.00</li>
+                <li class="productPrice" value="69.00">$69.00</li>
+                <button id="backPackButton" onclick="addCart()">Add Item</button>
             </ul>
         </div>
     </div>
@@ -136,7 +144,7 @@
         </div>
         <div class="subscribe">
             <div class="subscribeForm">
-                <form>
+                <form id="formId">
                     <input type="email" name="your_email" id="your-email" value="" placeholder="Your Email">
                     <input type="submit" name="subscribe" value="Subscribe" id="subscribe">
                 </form>
