@@ -12,6 +12,13 @@ window.onload=function() {
     }
 }
 
+function revealCart(){
+    alert("hello world")
+}
+
+
+
+
 var cart = []
 var Item = function(name,price,count){
     this.name = name
@@ -70,6 +77,7 @@ console.log(totalCart())
 //saveCart()
 
 //loadCart()
+
 
 
 

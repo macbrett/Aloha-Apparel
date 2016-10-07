@@ -310,6 +310,17 @@ HEADER
     width:55px;
 }
 
+button{
+
+
+    background  : none;
+    cursor  : pointer;
+    color   : white;
+    border  : none;
+    margin      : 0px;
+    padding     : 0px;
+}
+
 
 
 
@@ -396,7 +407,7 @@ HAND-CRAFTED
     width: 100%;
 }
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-PRODUCT-LINE IMAGES
+PRODUCT-LINE TEXT
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
@@ -438,6 +449,11 @@ PRODUCT-LINE IMAGES
 
 
 }
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+PRODUCT-LINE IMAGES
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 
 
 .mens {
@@ -587,6 +603,21 @@ MOST-LOVED
     color:#969696;
     font-size:14px;
     font-family:ralewaymedium;
+}
+
+#knitDressButton, #blueShirtButton,
+#dressButton, #backPackButton {
+    background-color: #e2574c;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: .25rem 1.3rem;
+    border: 0;
+    border-radius: 25px;
+    font-family: ralewaylight, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 2;
 }
 
 
