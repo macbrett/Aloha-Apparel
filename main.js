@@ -17,8 +17,6 @@ function revealCart(){
 }
 
 
-
-
 var cart = []
 var Item = function(name,price,count){
     this.name = name
@@ -78,6 +76,8 @@ console.log(totalCart())
 
 //loadCart()
 
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+SMOOTH SCROLL
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-
-
+/*! http://mths.be/smoothscroll v1.5.2 by @mathias */

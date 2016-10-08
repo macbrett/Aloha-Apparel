@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Document</title>
 
 
@@ -9,12 +10,15 @@
                 rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
                 crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
-    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
 
- 
+
+
+
 </head>
 
 <body>
+
 
 
 <header class="containerHeader">
@@ -33,7 +37,7 @@
                 <a href="#featured">Featured</a>
             </li>
             <li>
-                <a href="newsletter">Updates</a>
+                <a href="#newsletter">Updates</a>
             </li>
         </ul>
     </div>
@@ -81,56 +85,36 @@
 </section>
 
 
-</section>
+
 
 <section class="mostLoved">
+    <div class="productContainer">
+            <h2>Most-Loved
+                <span class="boldWord">Products</span>
+            </h2>
+                <div class="productGroup" data-flickity >
+                    <div class="product-wrapper">
+                        <img src="assets/images/demin-overall-shorts.jpg" alt="knit-dress">
+                            <ul>
+                                <li class="productType">DENIM</li>
+                                <li class="productDescription">Denim Overall Shorts</li>
+                                <li class="productPrice" value="89.00">$89.00</li>
+                                <button id="denimOverall" onclick="addCart()">Add Item</button>
+                            </ul>
+                        </div>
 
-
-        <h2>Most-Loved
-            <span class="boldWord">Products</span>
-        </h2>
-
-    <div class="productClass">
-        <div class="product">
-         <img src="assets/images/stretch-knit-dress.jpg" alt="knit-dress">
-            <ul>
-                <li class="productType">DRESSES</li>
-                <li class="productDescription">Stretch Knit Dress</li>
-                <li class="productPrice" value="169.00">$169.00</li>
-                <button id="knitDressButton" onclick="addCart()">Add Item</button>
-            </ul>
-        </div>
-
-        <div class="product">
-            <img src="assets/images/cotton-blue-shirt.jpg" alt="cotton-shirt">
-            <ul>
-                <li class="productType">SHIRTS</li>
-                <li class="productDescription">Cotton Blue Shirt</li>
-                <li class="productPrice" value="89.99">$89.00</li>
-                <button id="blueShirtButton" onclick="addCart()">Add Item</button>
-            </ul>
-        </div>
-
-        <div class="product">
-            <img src="assets/images/checked-stretch-dress.jpg" alt="stretch-dress">
-            <ul>
-                <li class="productType">DRESSES</li>
-                <li class="productDescription">Checked Stretched Dress</li>
-                <li class="productPrice" id="dressPrice" value="129.00">$129.00</li>
-                <button id = "dressButton" onclick="addCart()">Add Item</button>
-            </ul>
-        </div>
-
-        <div class="product">
-            <img src="assets/images/blue-hipster-backpack.jpg" alt="hipster-backpack">
-            <ul>
-                <li class="productType">PACKS</li>
-                <li class="productDescription">Blue Hipster Backpack</li>
-                <li class="productPrice" value="69.00">$69.00</li>
-                <button id="backPackButton" onclick="addCart()">Add Item</button>
-            </ul>
-        </div>
-    </div>
+                        <div class="product-wrapper">
+                            <img src="assets/images/stretch-knit-dress.jpg" alt="knit-dress">
+                            <ul>
+                                <li class="productType">DRESSES</li>
+                                <li class="productDescription">Stretch Knit Dress</li>
+                                <li class="productPrice" value="169.00">$169.00</li>
+                                <button id="knitDressButton" onclick="addCart()">Add Item</button>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 </section>
 
 <section class="wave-banner">
@@ -194,6 +178,18 @@
             </div>
         </div>
 </footer>
+
+<script type="jquery=3.1.1.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+
+<script>
+    $('.productGroup').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true
+    });
+</script>
 
 
 </body>

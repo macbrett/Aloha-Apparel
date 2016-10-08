@@ -418,9 +418,8 @@ PRODUCT-LINE TEXT
     justify-content:center;
 
 
-
-
 }
+
 .productLine div{
     height:300px;
     justify-content: center;
@@ -434,8 +433,6 @@ PRODUCT-LINE TEXT
 .productTypes {
     display: flex;
     justify-content:center;
-
-
 
 }
 
@@ -460,9 +457,11 @@ PRODUCT-LINE IMAGES
 
 background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
 url(assets/images/mens-category.jpg) no-repeat;
-    flex:2 1 50%;
+    flex:2 1 49.5%;
     background-size:cover;
     display:flex;
+    margin-right:0.5%;
+    margin-bottom:0.5%;
 
 
 }
@@ -477,8 +476,10 @@ url(assets/images/mens-category.jpg) no-repeat;
 .trends {
 background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
 url(assets/images/trends-category.jpg) no-repeat center center;
-    flex:1 1 25%;
+    flex:1 1 24.5%;
     display:flex;
+    margin-right:0.5%;
+    margin-bottom:0.5%;
 
 
 }
@@ -493,8 +494,9 @@ url(assets/images/trends-category.jpg) no-repeat center center;
 
 background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
 url(assets/images/glasses-category.jpg) no-repeat center center;
-    flex:1 1 25%;
+    flex:1 1 24.5%;
     display:flex;
+    margin-bottom:0.5%;
 }
 
 .glasses a{
@@ -507,8 +509,11 @@ url(assets/images/glasses-category.jpg) no-repeat center center;
 .sale {
 background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
 url(assets/images/sale-category.jpg) no-repeat center center;
-    flex:2 1 25%;
+    flex:2 1 24.50%;
     display:flex;
+    margin-right:0.50%;
+    margin-bottom:2%;
+
 
 
 }
@@ -522,8 +527,10 @@ url(assets/images/sale-category.jpg) no-repeat center center;
 .bags {
 background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
 url(assets/images/bags-category.jpg) no-repeat center center;
-    flex:1 1 25%;
+    flex:1 1 24.5%;
     display:flex;
+    margin-right:0.5%;
+    margin-bottom:2%;
 }
 
 .bags a{
@@ -535,8 +542,12 @@ url(assets/images/bags-category.jpg) no-repeat center center;
 .women {
 background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
 url(assets/images/womens-category.jpg) no-repeat center center;
-    flex:1 1 50%;
+    flex:1 1 49.5%;
     display:flex;
+    margin-right:0.25%;
+    margin-bottom:2%;
+
+
 }
 
 .women a{
@@ -549,38 +560,54 @@ url(assets/images/womens-category.jpg) no-repeat center center;
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 MOST-LOVED
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-.mostLoved {
-    height:575px;
-    display:inline-block;
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+SLIDER
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.mostLoved{
+
     width:100%;
+    padding: 4rem 0;
+    height:650px;
+    display:block;
+
+}
+.productContainer{
+
+    margin: 0 auto;
+    width: 100%;
+    height:525px;
+    display:block;
 
 
 }
 
-
-.mostLoved div{                 /*a box within mostLoved*/
-    display:inline-block;
-    text-align:center;
-    line-height: 200%;
-    padding-bottom:30px;
-
-}
 
 .mostLoved h2{
-    margin-top:50px;
-    margin-bottom:50px;
-}
-.product {                  /*these are the product boxes which hole an image and some text*/
-    display:inline-block;
-    text-align:center;
-    width:24%;
+    margin-top:20px;
 
 }
 
-.product img{
-    width:100%;
+.productGroup {
+
+    height:550px;
+    
+
 
 }
+
+.product-wrapper {
+
+    flex:1;
+    line-height:200%;
+    width:25%;
+    padding: 3rem 2rem;
+    text-align: center;
+
+}
+
+
 
 
 .productType {
@@ -594,7 +621,7 @@ MOST-LOVED
 
     font-family:playfair_displayregular;
     color:#e2574c;
-    font-size:22px;
+    font-size:18px;
 
 }
 
@@ -606,8 +633,9 @@ MOST-LOVED
 }
 
 #knitDressButton, #blueShirtButton,
-#dressButton, #backPackButton {
-    background-color: #e2574c;
+#dressButton, #backPackButton, #denimOverall,
+#cottonShirt, #blueSild, #pinkDress {
+    background-color: darkred;
     color: white;
     cursor: pointer;
     font-weight: bold;
@@ -615,7 +643,7 @@ MOST-LOVED
     border: 0;
     border-radius: 25px;
     font-family: ralewaylight, sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-style: normal;
     line-height: 2;
 }
@@ -633,6 +661,7 @@ WAVE-BANNER
     position:relative; /*settings for gradient taken from Mandi Wise Aloha site*/
     padding: 4rem 0;
     display:block;
+
 
 
 }
