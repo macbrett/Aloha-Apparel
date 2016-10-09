@@ -75,12 +75,12 @@ return totalCount;
 function totalCart(){
 var totalCost = 0;
     for(var i in cart){
-        totalCost += cart[i].price
+        totalCost += cart[i].price * cart[i].count;
     }
     return totalCost;
 }
 
-
+console.log(totalCart())
 
 function listCart(){
     var cartCopy=[];
@@ -123,12 +123,16 @@ function displayCart(){
     output = ""
     for (var i in cartArray){
         output += "<li>" + cartArray[i].name+" "+cartArray[i].count + "</li>"
+        + totalCost
     }
+    console.log(totalCart())
 
 
 }
 
-
+function revealCart(){
+    alert("Your cart has output");
+}
 
 
 

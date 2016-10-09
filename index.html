@@ -278,21 +278,35 @@
 
         addItemToCart(name, price, 1);
         displayCart();
-
+        totalCart();
     });
 
 
-    function displayCart(){
+    function displayCart() {
         var cartArray = listCart();
         output = ""
-        for (var i in cartArray){
-            output += cartArray[i].name+" "+cartArray[i].count+" "+cartArray[i].price + " "
-        }
-console.log(output)
+        total = ""
+        for (var i in cartArray) {
+            output += "Your cart has " + cartArray[i].count + " unit(s) of " +
+                    cartArray[i].name + " @" + cartArray[i].price + " each" + "...and..." + ""
 
+        }
+        console.log(output)
     }
 
-    console.log(displayCart())
+
+
+
+
+    function totalCart(){
+        var totalCost = 0;
+        for(var i in cart){
+            totalCost += cart[i].price * cart[i].count;
+        }
+        console.log("Your total is..." + "$"+totalCost);
+    }
+
+
 
 
 </script>
