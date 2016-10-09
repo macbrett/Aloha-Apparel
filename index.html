@@ -92,29 +92,101 @@
             <h2>Most-Loved
                 <span class="boldWord">Products</span>
             </h2>
-                <div class="productGroup" data-flickity >
+                <div class="productGroup" data-flickity='{ "autoPlay": true }' >
                     <div class="product-wrapper">
-                        <img src="assets/images/demin-overall-shorts.jpg" alt="knit-dress">
-                            <ul>
-                                <li class="productType">DENIM</li>
-                                <li class="productDescription">Denim Overall Shorts</li>
-                                <li class="productPrice" value="89.00">$89.00</li>
-                                <button id="denimOverall" onclick="addCart()">Add Item</button>
-                            </ul>
-                        </div>
+                        <img src="assets/images/stretch-knit-dress.jpg" alt="knit-dress">
+                        <ul>
+                            <li class="productType">DRESSES</li>
+                            <li class="productDescription">Stretch Knit Dress</li>
+                            <li class="productPrice" value="169.00">$169.00</li>
+                            <button id="knitDressButton" onclick="addCart()">Add Item</button>
+                        </ul>
+                    </div>
 
-                        <div class="product-wrapper">
-                            <img src="assets/images/stretch-knit-dress.jpg" alt="knit-dress">
-                            <ul>
-                                <li class="productType">DRESSES</li>
-                                <li class="productDescription">Stretch Knit Dress</li>
-                                <li class="productPrice" value="169.00">$169.00</li>
-                                <button id="knitDressButton" onclick="addCart()">Add Item</button>
-                            </ul>
-                        </div>
+                    <div class="product-wrapper">
+
+                        <img src="assets/images/cotton-blue-shirt.jpg" alt="cotton-shirt">
+
+                        <ul>
+                            <li class="productType">SHIRTS</li>
+                            <li class="productDescription">Cotton Blue Shirt</li>
+                            <li class="productPrice" value="89.99">$89.00</li>
+                            <button id="blueShirtButton" onclick="addCart()">Add Item</button>
+                        </ul>
+                    </div>
+
+                    <div class="product-wrapper">
+
+                        <img src="assets/images/checked-stretch-dress.jpg" alt="stretch-dress">
+
+                        <ul>
+                            <li class="productType">DRESSES</li>
+                            <li class="productDescription">Checked Stretched Dress</li>
+                            <li class="productPrice" id="dressPrice" value="129.00">$129.00</li>
+                            <button id = "dressButton" onclick="addCart()">Add Item</button>
+                        </ul>
+                    </div>
+
+                    <div class="product-wrapper">
+
+                        <img src="assets/images/blue-hipster-backpack.jpg" alt="hipster-backpack">
+
+                        <ul>
+                            <li class="productType">PACKS</li>
+                            <li class="productDescription">Blue Hipster Backpack</li>
+                            <li class="productPrice" value="69.00">$69.00</li>
+                            <button id="backPackButton" onclick="addCart()">Add Item</button>
+                        </ul>
+                    </div>
+                    <div class="product-wrapper">
+
+                        <img src="assets/images/demin-overall-shorts.jpg" alt="knit-dress">
+
+                        <ul>
+                            <li class="productType">DENIM</li>
+                            <li class="productDescription">Denim Overall Shorts</li>
+                            <li class="productPrice" value="89.00">$89.00</li>
+                            <button id="denimOverall" onclick="addCart()">Add Item</button>
+                        </ul>
+                    </div>
+
+                    <div class="product-wrapper">
+
+                        <img src="assets/images/pink-dotted-dress.jpg" alt="cotton-shirt">
+
+                        <ul>
+                            <li class="productType">DRESSES</li>
+                            <li class="productDescription">Pink Dotted Dress</li>
+                            <li class="productPrice" value="99.99">$99.00</li>
+                            <button id="pinkDress" onclick="addCart()">Add Item</button>
+                        </ul>
+                    </div>
+
+                    <div class="product-wrapper">
+
+                        <img src="assets/images/blue-silk-dress.jpg" alt="stretch-dress">
+
+                        <ul>
+                            <li class="productType">DRESSES</li>
+                            <li class="productDescription">Blue Silk Dress</li>
+                            <li class="productPrice" value="119.00">$119.00</li>
+                            <button id = "blueSilk" onclick="addCart()">Add Item</button>
+                        </ul>
+                    </div>
+
+                    <div class="product-wrapper">
+
+                        <img src="assets/images/cotton-yellow-tshirt.jpg" alt="hipster-backpack">
+
+                        <ul>
+                            <li class="productType">SHIRTS</li>
+                            <li class="productDescription">Cotton Yellow T-shirt</li>
+                            <li class="productPrice" value="39.00">$39.00</li>
+                            <button id="cottonShirt" onclick="addCart()">Add Item</button>
+                        </ul>
                     </div>
                 </div>
-            </div>
+      </div>
 </section>
 
 <section class="wave-banner">
@@ -186,8 +258,12 @@
 <script>
     $('.productGroup').flickity({
         // options
-        cellAlign: 'left',
-        contain: true
+        autoPlay: true,
+
+        contain: true,
+    wrapAround:true,
+
+
     });
 </script>
 
