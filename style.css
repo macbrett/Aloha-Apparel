@@ -252,6 +252,7 @@ HEADER
     display: flex;
     justify-content: space-between;
     align-items:center;
+    flex-wrap:wrap;
 }
 
 .logo {                 /*this floats the logo container to the left*/
@@ -569,7 +570,7 @@ SLIDER
 
     width: 1300px;
     padding: 4rem 0;
-    height: 600px;
+    height: 500px;
 }
 
 .productContainer{
@@ -591,6 +592,7 @@ SLIDER
 
     height:450px;
     width:100%;
+    padding-bottom:40px;
 
 
 }
@@ -599,12 +601,13 @@ SLIDER
 
 
     line-height:200%;
-    width:300px;
+    width:200px;
     text-align: center;
+
 
 }
 .product-wrapper img{
-    width:100%;
+    width:80%;
 }
 
 
@@ -621,7 +624,7 @@ SLIDER
 
     font-family:playfair_displayregular;
     color:#e2574c;
-    font-size:18px;
+    font-size:16px;
 
 }
 
@@ -661,9 +664,11 @@ FLICKITY
 }
 
 .flickity-viewport {
-    position: relative;
+position:relative;
+    width:150%;
+    transform: translateX(-40%);
+    overflow: hidden;
 
-    transform: translateX(-20%);
 }
 
 
@@ -916,7 +921,8 @@ Tablet Display
 
         background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
         url(assets/images/mens-category.jpg) no-repeat;
-        flex:1 1 100%;
+        flex:2 1 100%;
+        margin-bottom:0.5%;
         background-size:cover;
         display:flex;
 
@@ -933,8 +939,9 @@ Tablet Display
     .trends {
         background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
         url(assets/images/trends-category.jpg) no-repeat center center;
-        flex:1 1 50%;
+        flex:1 1 49.5%;
         display:flex;
+        margin-right:0.5%;
 
 
     }
@@ -951,6 +958,7 @@ Tablet Display
         url(assets/images/glasses-category.jpg) no-repeat center center;
         flex:1 1 50%;
         display:flex;
+
     }
 
     .glasses a{
@@ -963,8 +971,10 @@ Tablet Display
     .sale {
         background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
         url(assets/images/sale-category.jpg) no-repeat center center;
-        flex:1 1 50%;
+        flex:1 1 49.25%;
         display:flex;
+        margin-right:0.25%;
+        margin-bottom:.50%;
 
     }
 
@@ -977,8 +987,10 @@ Tablet Display
     .bags {
         background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
         url(assets/images/bags-category.jpg) no-repeat center center;
-        flex:1 1 50%;
+        flex:1 1 49.25%;
         display:flex;
+        margin-left:0.25%;
+        margin-bottom:.50%;
     }
 
     .bags a{
@@ -990,7 +1002,7 @@ Tablet Display
     .women {
         background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
         url(assets/images/womens-category.jpg) no-repeat center center;
-        flex:1 1 100%;
+        flex:2 1 100%;
         display:flex;
     }
 
@@ -1050,8 +1062,99 @@ Tablet Display
 Small Display
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-@media all and (max-width:600px) {
+@media all and (min-width:0px) and (max-width:600px) {
 
+
+    .containerHeader {
+
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: .5rem;
+        padding-top: 1rem;
+
+    }
+
+    .logo { /*this floats the logo container to the left*/
+
+        order: 1;
+        flex-basis: 20%;
+
+
+    }
+    .logo img{              /*sizes the image in the logo container*/
+
+        width:120px;
+        height:auto;
+
+    }
+
+    .website-navigation {
+
+        align-self: center;
+        width:100%;
+        display:flex;
+        justify-content:center;
+        flex-basis: 10%;
+        order: 3;
+
+
+    }
+
+    .website-navigation ul{
+        display:flex;
+        justify-content:space-between;
+        border-top: 0;
+        padding-top: 0;
+
+
+    }
+
+    .website-navigation li {
+        align-items:center;
+        display:flex;
+        justify-content: space-between;
+        font-size: .9rem;
+        margin-left:  2rem;
+
+
+    }
+    .website-navigation a{
+        text-decoration:none;
+        color:#b64036;
+        justify-content:space-between;
+
+
+    }
+
+
+    .cart {                 /*this floats the cart container to the right*/
+
+
+        flex-basis: 20%;
+        order: 2;
+        width: 48px;
+        align-self: flex-end;
+        cursor: pointer;
+
+        text-align: right;
+    }
+
+
+    .cart img{              /*sizes the image in the cart container*/
+
+    }
+
+    button{
+
+
+        background  : none;
+        cursor  : pointer;
+        color   : white;
+        border  : none;
+        margin      : 0px;
+        padding     : 0px;
+    }
 
 
 
@@ -1118,7 +1221,7 @@ PRODUCT LINE
 
         background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
         url(assets/images/mens-category.jpg) no-repeat;
-        flex:1 1 100%;
+        flex:2 1 100%;
         background-size:cover;
         display:flex;
 
@@ -1135,7 +1238,7 @@ PRODUCT LINE
     .trends {
         background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
         url(assets/images/trends-category.jpg) no-repeat center center;
-        flex:1 1 50%;
+        flex:1 1 49%;
         display:flex;
 
 
@@ -1151,7 +1254,7 @@ PRODUCT LINE
 
         background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
         url(assets/images/glasses-category.jpg) no-repeat center center;
-        flex:1 1 50%;
+        flex:1 1 49%;
         display:flex;
     }
 
@@ -1165,8 +1268,9 @@ PRODUCT LINE
     .sale {
         background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
         url(assets/images/sale-category.jpg) no-repeat center center;
-        flex:1 1 50%;
+        flex:1 1 49%;
         display:flex;
+        margin-bottom:0.5%;
 
     }
 
@@ -1179,8 +1283,9 @@ PRODUCT LINE
     .bags {
         background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
         url(assets/images/bags-category.jpg) no-repeat center center;
-        flex:1 1 50%;
+        flex:1 1 49%;
         display:flex;
+        margin-bottom:0.5%;
     }
 
     .bags a{
@@ -1192,7 +1297,7 @@ PRODUCT LINE
     .women {
         background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
         url(assets/images/womens-category.jpg) no-repeat center center;
-        flex:1 1 100%;
+        flex:2 1 100%;
         display:flex;
     }
 
@@ -1206,19 +1311,67 @@ PRODUCT LINE
 
     /*========================================================*/
 
+    .mostLoved {
+
+        width: 100%;
+        padding: 4rem 0;
+        height: 650px;
+    }
+
+    .productContainer{
+
+
+        width: 100%;
+
+    }
+
+
     .mostLoved h2{
-        margin-top:50px;
-        margin-bottom:50px;
-        font-size:35px;
-    }
-    .product {                  /*these are the product boxes which hole an image and some text*/
-        display:inline-block;
-        text-align:center;
-        width:50%;
+        margin-top:20px;
+        font-size: 24px;
 
     }
 
-/*===================================================*/
+    .productGroup {
+
+        height:450px;
+        width:100%;
+
+
+
+    }
+
+    .product-wrapper {
+
+
+        line-height:200%;
+        width:100%;
+        text-align: center;
+
+
+    }
+    .product-wrapper img{
+        width:100%;
+    }
+
+    .flickity-enabled {
+        /*position: absolute;*/
+        display: block;
+        height: 100%;
+        width:  100%;
+
+    }
+
+    .flickity-viewport {
+        /*position:relative;*/
+        width:100%;
+        /*overflow: hidden;*/
+        transform: translateX(+0%);
+    }
+
+
+
+    /*===================================================*/
 
     .subscribe{
 width:100%;
