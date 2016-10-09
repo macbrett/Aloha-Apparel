@@ -253,6 +253,7 @@ HEADER
     justify-content: space-between;
     align-items:center;
     flex-wrap:wrap;
+    padding-bottom: 0.75rem;
 }
 
 .logo {                 /*this floats the logo container to the left*/
@@ -293,8 +294,10 @@ HEADER
 }
 .website-navigation a{
     text-decoration:none;
-    color:#b64036;
+    color:#e2574c;
     justify-content:space-between;
+    text-transform: uppercase;
+    font-family: ralewaymedium;
 
 
 }
@@ -466,6 +469,7 @@ url(assets/images/mens-category.jpg) no-repeat;
     margin-left:0.5%;
 
 
+
 }
 
 .mens a {
@@ -484,6 +488,7 @@ url(assets/images/trends-category.jpg) no-repeat center center;
     display:flex;
     margin-right:0.5%;
     margin-bottom:0.5%;
+    background-size: cover, cover
 
 
 }
@@ -504,6 +509,7 @@ url(assets/images/glasses-category.jpg) no-repeat center center;
     display:flex;
     margin-bottom:0.5%;
     margin-right:0.5%;
+    background-size: cover, cover
 
 }
 
@@ -524,6 +530,7 @@ url(assets/images/sale-category.jpg) no-repeat center center;
     margin-right:0.50%;
     margin-bottom:2%;
     margin-left:0.5%;
+    background-size: cover, cover
 
 
 
@@ -544,6 +551,7 @@ url(assets/images/bags-category.jpg) no-repeat center center;
     display:flex;
     margin-right:0.5%;
     margin-bottom:2%;
+    background-size: cover, cover
 }
 
 .bags a{
@@ -561,6 +569,7 @@ url(assets/images/womens-category.jpg) no-repeat center center;
     display:flex;
     margin-right:0.5%;
     margin-bottom:2%;
+    background-size: cover, cover
 
 
 }
@@ -650,9 +659,7 @@ SLIDER
     font-family:ralewaymedium;
 }
 
-#knitDressButton, #blueShirtButton,
-#dressButton, #backPackButton, #denimOverall,
-#cottonShirt, #blueSilk, #pinkDress {
+#button1{
     background-color: darkred;
     color: white;
     cursor: pointer;
@@ -664,6 +671,10 @@ SLIDER
     font-size: 0.8rem;
     font-style: normal;
     line-height: 2;
+}
+#button1 a{
+    text-decoration:none;
+    color: white;
 }
 
 
@@ -911,7 +922,7 @@ Tablet Display
 
     }
     .productLine div{
-        height:300px;
+        height:250px;
         justify-content: center;
         align-self:center;
         display:flex;
@@ -1070,7 +1081,7 @@ Small Display
 
         order: 1;
         flex-basis: 20%;
-
+        padding-bottom:0.5rem
 
     }
     .logo img{              /*sizes the image in the logo container*/
@@ -1089,6 +1100,8 @@ Small Display
         flex-basis: 10%;
         order: 3;
         padding-top:1rem;
+        border-top:solid;
+        border-width: 0.5px;
 
 
     }
@@ -1132,13 +1145,13 @@ Small Display
         width: 48px;
         align-self: flex-end;
         cursor: pointer;
-
+        padding-bottom:0.5rem;
         text-align: right;
     }
 
 
     .cart img{              /*sizes the image in the cart container*/
-
+        width:50px;
     }
 
     button{
@@ -1188,7 +1201,7 @@ PRODUCT LINE
 
     }
     .productLine div{
-        height:300px;
+        height:200px;
         justify-content: center;
         align-self:center;
         display:flex;
@@ -1224,12 +1237,15 @@ PRODUCT LINE
         margin-left:0.5%;
 
 
+
     }
 
     .mens a{
 
         align-self:center;
         text-transform:uppercase;
+        font-family:ralewaymedium;
+        font-size: 22px;
     }
 
 
@@ -1242,12 +1258,15 @@ PRODUCT LINE
         margin-left:0.5%;
 
 
+
     }
 
     .trends a{
 
         align-self:center;
         text-transform:uppercase;
+        font-family:ralewaymedium;
+        font-size: 22px;
     }
 
     .glasses {
@@ -1259,12 +1278,15 @@ PRODUCT LINE
         margin-right:0.5%;
 
 
+
     }
 
     .glasses a{
 
         align-self:center;
         text-transform:uppercase;
+        font-family:ralewaymedium;
+        font-size: 22px;
     }
 
 
@@ -1277,12 +1299,15 @@ PRODUCT LINE
         margin-bottom:.50%;
         margin-left:0.5%;
 
+
     }
 
     .sale a{
 
         align-self:center;
         text-transform:uppercase;
+        font-family:ralewaymedium;
+        font-size: 22px;
     }
 
     .bags {
@@ -1298,6 +1323,8 @@ PRODUCT LINE
 
         align-self:center;
         text-transform:uppercase;
+        font-family:ralewaymedium;
+        font-size: 22px;
     }
 
     .women {
@@ -1313,6 +1340,8 @@ PRODUCT LINE
 
         align-self:center;
         text-transform:uppercase;
+        font-family:ralewaymedium;
+        font-size: 22px;
     }
 
     /*========================================================*/

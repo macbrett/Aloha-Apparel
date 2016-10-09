@@ -1,6 +1,17 @@
 /**
  * Created by brettmacdonald on 2016-10-06.
  */
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Thanks for subscribing
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Thanks for subscribing
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Thanks for subscribing
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 window.onload=function() {
     document.getElementById('formId').onsubmit=function() {
         /* do what you want with the form */
@@ -12,9 +23,16 @@ window.onload=function() {
     }
 }
 
-function revealCart(){
-    alert("hello world")
-}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Shopping Cart
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Shopping Cart
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Shopping Cart
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 
 
 var cart = []
@@ -35,16 +53,12 @@ var Item = function(name,price,count){
      }
      var item = new Item(name, price,count);
     cart.push(item)
+     saveCart();
 }
 
-addItemToCart("Stretched Knit Dress", 169.00, 1)
-addItemToCart("Cotton Blue Shirt", 89.00, 1)
-addItemToCart("Checked Stretch Dress", 129.00, 1)
-addItemToCart("Blue Hipster Backpack", 69.00, 1)
-addItemToCart("Blue Hipster Backpack", 69.00, 1)
 
-console.log(cart[3])
-console.log(cart.length)
+
+
 
 
 function countCart(){
@@ -57,9 +71,6 @@ return totalCount;
 
 
 
-console.log(countCart())
-
-//countCart() total amount of items
 
 function totalCart(){
 var totalCost = 0;
@@ -69,12 +80,58 @@ var totalCost = 0;
     return totalCost;
 }
 
-console.log(totalCart())
-//listCart() array of Item
 
-//saveCart()
 
-//loadCart()
+function listCart(){
+    var cartCopy=[];
+    for (var i in cart) {
+        var item = cart[i];
+        var itemCopy = {}
+        for (var prop in item) {
+            itemCopy[prop] = item[prop];
+        }
+        cartCopy.push(itemCopy);
+    }
+    return cartCopy;
+}
+
+function removeItemFromCart(name) {
+    for (var i in cart) {
+        if (cart[i].name === name) {
+            cart[i].count--;
+            if (cart[i].count === 0) {
+                cart.splice(i, 1)
+            }
+            break;
+        }
+    }
+};
+function saveCart(){
+    /*localStorage.setItem('shoppingCart', JSON.stringify(cart))*/
+}
+
+function loadCart() {
+    /*cart = JSON.parse(localStorage.getItem("shoppingCart"))*/
+}
+loadCart();
+
+var array = listCart();
+console.log(array)
+
+function displayCart(){
+    var cartArray = listCart();
+    output = ""
+    for (var i in cartArray){
+        output += "<li>" + cartArray[i].name+" "+cartArray[i].count + "</li>"
+    }
+
+
+}
+
+
+
+
+
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 SMOOTH SCROLL

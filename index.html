@@ -61,6 +61,7 @@
         <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our
             current selection of products or sign up for updates below.</p>
         <hr>
+
     </div>
 </section>
 <section class="productLine">
@@ -99,10 +100,9 @@
                             <li class="productType">DRESSES</li>
                             <li class="productDescription">Stretch Knit Dress</li>
                             <li class="productPrice" value="169.00">$169.00</li>
-                            <button id="knitDressButton" onclick="addCart()">Add Item</button>
                         </ul>
+                        <button id="button1"><a href="" class="addToCart" data-name="Stretch Knit Dress" data-price="169.00">Add Item</a></button>
                     </div>
-
                     <div class="product-wrapper">
 
                         <img src="assets/images/cotton-blue-shirt.jpg" alt="cotton-shirt">
@@ -111,8 +111,8 @@
                             <li class="productType">SHIRTS</li>
                             <li class="productDescription">Cotton Blue Shirt</li>
                             <li class="productPrice" value="89.99">$89.00</li>
-                            <button id="blueShirtButton" onclick="addCart()">Add Item</button>
                         </ul>
+                        <button id="button1"><a href="" class="addToCart" data-name="Cotton Blue Shirt" data-price="89.00">Add Item</a></button>
                     </div>
 
                     <div class="product-wrapper">
@@ -123,8 +123,8 @@
                             <li class="productType">DRESSES</li>
                             <li class="productDescription">Checked Stretched Dress</li>
                             <li class="productPrice" id="dressPrice" value="129.00">$129.00</li>
-                            <button id = "dressButton" onclick="addCart()">Add Item</button>
                         </ul>
+                        <button id="button1"><a href="" class="addToCart" data-name="Checked Stretched Dress" data-price="129.00">Add Item</a></button>
                     </div>
 
                     <div class="product-wrapper">
@@ -135,8 +135,8 @@
                             <li class="productType">PACKS</li>
                             <li class="productDescription">Blue Hipster Backpack</li>
                             <li class="productPrice" value="69.00">$69.00</li>
-                            <button id="backPackButton" onclick="addCart()">Add Item</button>
                         </ul>
+                        <button id="button1"><a href="" class="addToCart" data-name="Blue Hipster Backpack" data-price="69.00">Add Item</a></button>
                     </div>
                     <div class="product-wrapper">
 
@@ -146,8 +146,8 @@
                             <li class="productType">DENIM</li>
                             <li class="productDescription">Denim Overall Shorts</li>
                             <li class="productPrice" value="89.00">$89.00</li>
-                            <button id="denimOverall" onclick="addCart()">Add Item</button>
                         </ul>
+                        <button id="button1"><a href="" class="addToCart" data-name="Denim Overall Shorts" data-price="69.00">Add Item</a></button>
                     </div>
 
                     <div class="product-wrapper">
@@ -158,8 +158,8 @@
                             <li class="productType">DRESSES</li>
                             <li class="productDescription">Pink Dotted Dress</li>
                             <li class="productPrice" value="99.99">$99.00</li>
-                            <button id="pinkDress" onclick="addCart()">Add Item</button>
                         </ul>
+                        <button id="button1"><a href="" class="addToCart" data-name="Pink Dotted Dress" data-price="99.00">Add Item</a></button>
                     </div>
 
                     <div class="product-wrapper">
@@ -170,8 +170,8 @@
                             <li class="productType">DRESSES</li>
                             <li class="productDescription">Blue Silk Dress</li>
                             <li class="productPrice" value="119.00">$119.00</li>
-                            <button id = "blueSilk" onclick="addCart()">Add Item</button>
                         </ul>
+                        <button id="button1"><a href="" class="addToCart" data-name="Blue Silk Dress" data-price="119.00">Add Item</a></button>
                     </div>
 
                     <div class="product-wrapper">
@@ -182,8 +182,8 @@
                             <li class="productType">SHIRTS</li>
                             <li class="productDescription">Cotton Yellow T-shirt</li>
                             <li class="productPrice" value="39.00">$39.00</li>
-                            <button id="cottonShirt" onclick="addCart()">Add Item</button>
                         </ul>
+                        <button id="button1"><a href="" class="addToCart" data-name="Cotton Yellow Tshirt" data-price="39.00">Add Item</a></button>
                     </div>
                 </div>
       </div>
@@ -270,6 +270,38 @@
     });
 </script>
 <script>
+
+    $('.addToCart').click(function(event) {
+        event.preventDefault();
+        var name = $(this).attr("data-name");
+        var price = Number($(this).attr("data-price"));
+
+        addItemToCart(name, price, 1);
+        displayCart();
+
+    });
+
+
+    function displayCart(){
+        var cartArray = listCart();
+        output = ""
+        for (var i in cartArray){
+            output += cartArray[i].name+" "+cartArray[i].count+" "+cartArray[i].price + " "
+        }
+console.log(output)
+
+    }
+
+    console.log(displayCart())
+
+
+</script>
+
+
+
+
+
+<script>
     $(function(){
         $('a[href^="#"]').click(function(e){
 
@@ -289,6 +321,7 @@
         });
     })
 </script>
+
 
 </body>
 </html>
