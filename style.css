@@ -569,7 +569,6 @@ url(assets/images/womens-category.jpg) no-repeat center center;
 
     align-self:center;
     text-transform:uppercase;
-    font-family:ralewaymedium;
     font-size: 40px;
 }
 
@@ -1029,10 +1028,12 @@ Tablet Display
     }
     .social a{
         display:none;
+
     }
     .social li{
         display:inline-block;
-        display:inline;
+        padding:0.75rem;
+
     }
 
 
@@ -1087,6 +1088,7 @@ Small Display
         justify-content:center;
         flex-basis: 10%;
         order: 3;
+        padding-top:1rem;
 
 
     }
@@ -1105,7 +1107,7 @@ Small Display
         display:flex;
         justify-content: space-between;
         font-size: .9rem;
-        margin-left:  2rem;
+        margin-left:  1rem;
 
 
     }
@@ -1113,6 +1115,10 @@ Small Display
         text-decoration:none;
         color:#b64036;
         justify-content:space-between;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: ralewaymedium;
+
 
 
     }
@@ -1121,7 +1127,7 @@ Small Display
     .cart {                 /*this floats the cart container to the right*/
 
 
-        flex-basis: 20%;
+        flex-basis: 50%;
         order: 2;
         width: 48px;
         align-self: flex-end;
@@ -1424,10 +1430,12 @@ width:100%;
     }
     .social a{
        display:none;
+
     }
     .social li{
         display:inline-block;
-        display:inline;
+        padding:0.75rem;
+
 }
 
 }
