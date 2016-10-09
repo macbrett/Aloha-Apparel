@@ -53,7 +53,7 @@
     </div>
 </section>
 
-<section class="handCrafted">
+<section class="handCrafted"><a href="" name="about"></a>
     <div class="handCraftedcontainer">
         <h2>Hand-Crafted
             <span class="boldWord">Styles</span>
@@ -65,7 +65,7 @@
 </section>
 <section class="productLine">
     <div class="mens">
-        <span class="productTypes"><a href="#">mens</a></span>
+        <span class="productTypes"><a href="#" name="products">mens</a></span>
     </div>
     <div class="trends">
         <span class="productTypes"><a href="#">trends</a></span>
@@ -87,7 +87,7 @@
 
 
 
-<section class="mostLoved">
+<section class="mostLoved" name="featured"><a href="" name="featured"></a>
     <div class="productContainer">
             <h2>Most-Loved
                 <span class="boldWord">Products</span>
@@ -189,7 +189,7 @@
       </div>
 </section>
 
-<section class="wave-banner">
+<section class="wave-banner" name="subscribe"><a href="" name="updates"></a>
     <div class="wave-text-container">
         <div class="wave-text">
             <h2>Sign Up for
@@ -255,6 +255,10 @@
 <script type="text/javascript" src="main.js"></script>
 <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
 <script>
     $('.productGroup').flickity({
         // options
@@ -265,7 +269,26 @@
 
     });
 </script>
+<script>
+    $(function(){
+        $('a[href^="#"]').click(function(e){
 
+            var target = $(this).attr('href')
+            var strip = target.slice(1);
+            var anchor = $("a[name='" + strip + "']");
+
+            e.preventDefault();
+
+            $('html, body').animate({
+
+                scrollTop: anchor.offset().top
+
+            },'slow');
+
+
+        });
+    })
+</script>
 
 </body>
 </html>
