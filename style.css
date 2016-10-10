@@ -218,13 +218,13 @@ CUSTOM CSS
 BODY
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 html {
-    color:#2d2d2d;
+    color:#2D2D2D;
 }
 
 body {
     font-family:ralewaylight,serif,sans-serif;        /*setting the default body font to Raleway Light*/
     font-size:16px;
-    font-color:#2d2d2d;
+    font-color:#2D2D2D;
 
 }
 
@@ -241,7 +241,15 @@ h2 {
 h3 {
     font-family:playfair_displayregular,serif,sans-serif;
     font-size:30px;}
-
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Desktop Display
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Desktop Display
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Desktop Display
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 HEADER
@@ -257,58 +265,44 @@ HEADER
 }
 
 .logo {            /************DESKTOP************/     /*this floats the logo container to the left*/
-
     padding-top:10px;
     padding-left:20px;
-
 }
 
 .logo img{      /************DESKTOP************/        /*sizes the image in the logo container*/
     width:140px;
-
 }
 
 .website-navigation {/************DESKTOP************/
-
     width:300px;
     display:flex;
     justify-content:center;
-
-
 }
 
 .website-navigation ul{/************DESKTOP************/
     display:flex;
     justify-content:space-between;
     width:300px;
-
-
 }
 
 .website-navigation li {/************DESKTOP************/
-    align-item:center;
     display:flex;
     justify-content: space-between;
-
-
 }
+
 .website-navigation a{/************DESKTOP************/
     text-decoration:none;
     color:#e2574c;
     justify-content:space-between;
     text-transform: uppercase;
     font-family: ralewaymedium,serif,sans-serif;
-
-
 }
-
 
 .cart {      /************DESKTOP************/           /*this floats the cart container to the right*/
 
     padding-top:10px;
     padding-right:20px;
 }
-
 
 .cart img{     /************DESKTOP************/         /*sizes the image in the cart container*/
     width:55px;
@@ -334,7 +328,6 @@ HERO-BANNER
 
 
 .hero-banner {/************DESKTOP************/
-
     background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
     url("assets/images/banner-girl.png") no-repeat center,
     url("assets/images/flower-bkgd.jpg");
@@ -342,31 +335,23 @@ HERO-BANNER
     height:550px;       /*settings for gradient taken from Mandi Wise Aloha site*/
     /* see Stack Overflow http://stackoverflow.com/questions/16589519/use-css-gradient-over-background-image*/
     display:flex;
-
-
-
 }
 
 .banner-text-container {   /************DESKTOP************/ /*box within the hero-banner*/
-
     width:100%;
     top:50%;
     text-align:center;
     color:white;
     justify-content: center;
     align-self:center;
-
 }
 
 .newCollection{/************DESKTOP************/
-
     font-size:20px;
     font-family:ralewaymedium,serif,sans-serif;
-
 }
 
 .springSummer {/************DESKTOP************/
-
     font-size: 70px;
     font-family: playfair_displayregular,serif,sans-serif;
 }
@@ -375,15 +360,10 @@ HERO-BANNER
 HAND-CRAFTED
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .handCrafted {
-
-    align:center;
     height:275px;
     display:flex;
     justify-content:center;
-    content-align:center;
     width:100%;
-
-
 }
 
 .handCraftedcontainer {      /*box within handCrafted-section*/
@@ -391,27 +371,27 @@ HAND-CRAFTED
     padding-top:50px;
     padding-bottom: 50px;
     text-align:center;
-
 }
 
 .handCraftedcontainer p {
     line-height:200%;
     padding-bottom:70px;
     font-size:18px;
-
 }
 
 .boldWord {             /*bolds a word using span tag*/
     font-weight:bold;
     font-family:playfair_displaybold,serif,sans-serif;
 }
+
 .handcrafted hr { /*this is a line at the bottom of the section*/
     margin-bottom: 1px;
     color: #d7d7d7;
     width: 100%;
 }
+
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-PRODUCT-LINE TEXT
+TEXT LINKS WITHIN IMAGES OF PRODUCTS
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
@@ -420,8 +400,6 @@ PRODUCT-LINE TEXT
     flex-flow:row wrap;
     width:100%;
     justify-content:center;
-
-
 }
 
 .productLine div{
@@ -429,36 +407,25 @@ PRODUCT-LINE TEXT
     justify-content: center;
     align-self:center;
     display:flex;
-
-
-
-
 }
+
 .productTypes {
     display: flex;
     justify-content:center;
-
 }
-
 
 .productTypes a {
     font-size:18px;
     text-decoration:none;
     color:white;
     display:flex;
-
-
-
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-PRODUCT-LINE IMAGES
+IMAGES OF PRODUCTS
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-
-
 .mens {
-
     background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
     url(assets/images/mens-category.jpg) no-repeat;
     flex:2 1 49%;
@@ -467,13 +434,9 @@ PRODUCT-LINE IMAGES
     margin-right:0.5%;
     margin-bottom:0.5%;
     margin-left:0.5%;
-
-
-
 }
 
 .mens a {
-
     align-self:center;
     text-transform:uppercase;
     font-family:ralewaymedium,serif,sans-serif;
@@ -489,12 +452,9 @@ PRODUCT-LINE IMAGES
     margin-right:0.5%;
     margin-bottom:0.5%;
     background-size: cover, cover
-
-
 }
 
 .trends a{
-
     align-self:center;
     text-transform:uppercase;
     font-family:ralewaymedium,serif,sans-serif;
@@ -502,7 +462,6 @@ PRODUCT-LINE IMAGES
 }
 
 .glasses {
-
     background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
     url(assets/images/glasses-category.jpg) no-repeat center center;
     flex:1 1 24%;
@@ -510,11 +469,9 @@ PRODUCT-LINE IMAGES
     margin-bottom:0.5%;
     margin-right:0.5%;
     background-size: cover, cover
-
 }
 
 .glasses a{
-
     align-self:center;
     text-transform:uppercase;
     font-family:ralewaymedium,serif,sans-serif;
@@ -531,13 +488,9 @@ PRODUCT-LINE IMAGES
     margin-bottom:2%;
     margin-left:0.5%;
     background-size: cover, cover
-
-
-
 }
 
 .sale a{
-
     align-self:center;
     text-transform:uppercase;
     font-family:ralewaymedium,serif,sans-serif;
@@ -555,7 +508,6 @@ PRODUCT-LINE IMAGES
 }
 
 .bags a{
-
     align-self:center;
     text-transform:uppercase;
     font-family:ralewaymedium,serif,sans-serif;
@@ -570,8 +522,6 @@ PRODUCT-LINE IMAGES
     margin-right:0.5%;
     margin-bottom:2%;
     background-size: cover, cover
-
-
 }
 
 .women a{
@@ -583,76 +533,52 @@ PRODUCT-LINE IMAGES
 
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-MOST-LOVED
+MOST-LOVED PRODUCTS WITH SLIDER
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-SLIDER
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .mostLoved {
-
     width: 1300px;
     padding: 4rem 0;
     height: 500px;
 }
 
 .productContainer{
-
-
     width: 100%;
     display:block;
-
-
 }
-
 
 .mostLoved h2{
     margin-top:20px;
-
 }
 
 .productGroup {
-
     height:450px;
     width:100%;
     padding-bottom:40px;
-
-
 }
 
 .product-wrapper {
-
-
     line-height:200%;
     width:200px;
     text-align: center;
-
-
 }
+
 .product-wrapper img{
     width:80%;
 }
-
-
-
 
 .productType {
     color:#969696;
     font-size:12px;
     font-family:ralewaymedium,serif,sans-serif;
     text-transform:uppercase;
-
 }
 
 .productDescription{
-
     font-family:playfair_displayregular,serif,sans-serif;
     color:#e2574c;
     font-size:16px;
-
 }
-
 
 .productPrice {
     color:#969696;
@@ -673,21 +599,24 @@ SLIDER
     font-style: normal;
     line-height: 2;
 }
+
 .button1 a{
     text-decoration:none;
     color: white;
+
+}
+.button1 a:hover{
+    color:black;
 }
 
-
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++F
-FLICKITY
+FLICKITY SLIDER
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .flickity-enabled {
     position: absolute;
     display: block;
     height: 100%;
     width: 100%;
-
 }
 
 .flickity-viewport {
@@ -695,14 +624,7 @@ FLICKITY
     width:150%;
     transform: translateX(-40%);
     overflow: hidden;
-
 }
-
-
-
-
-
-
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 WAVE-BANNER
@@ -715,9 +637,6 @@ WAVE-BANNER
     position:relative; /*settings for gradient taken from Mandi Wise Aloha site*/
     padding: 4rem 0;
     display:block;
-
-
-
 }
 
 .wave-text-container{   /*a box that will hold text in this section*/
@@ -726,25 +645,17 @@ WAVE-BANNER
     color:white;
     display:inline-block;
     margin-top:30px;
-
-
 }
-
 
 .wave-text-container p {
     line-height: 200%;
     padding-bottom: 30px;
     font-size: 18px;
-
-
 }
-
-
 
 .signUp {
     font-size:30px;
     font-family:playfair_displaybold,serif,sans-serif;
-
 }
 
 .stayUpdated {
@@ -752,39 +663,32 @@ WAVE-BANNER
     font-family:ralewaylight,serif,sans-serif;
 }
 
-
-
 .subscribeForm{
-
     display: block;
     margin: 0.5rem auto 0;
     position: relative;
     width:350px;
     padding-right: 80px;
-}
 
+}
 
 #your-email {
     padding: .5rem 1.75rem;
-
     width: 100%;
     border: 0;
     border-radius: 25px;
-
     color: #2d2d2d;
     font-family: ralewaylight, sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: normal;
     line-height: 2;
+    box-shadow: 5px 5px 10px #888888;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 SUBSCRIBE FORM
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
-
-
 #subscribe {
     background-color: #e2574c;
     color: white;
@@ -804,25 +708,15 @@ SUBSCRIBE FORM
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-SUBSCRIBE FORM
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
-
-
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 FOOTER
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 .footerContainer{
-
     background:#242424;
     padding: 4rem 0;
     display:flex;
     justify-content:space-between;
     width:100%;
-
-
-
 }
 
 .social {
@@ -831,7 +725,6 @@ FOOTER
 }
 
 .social li{
-
     padding-bottom:10px;
 }
 .social i {         /*these are the icons*/
@@ -840,31 +733,26 @@ FOOTER
 }
 
 .social a {         /*these are the links*/
-
     color:white;
     text-decoration:none;
 }
 
 a:hover {
-
     color: #b64036;
 }
 i:hover{
     color: #b64036;
 }
 
-
 .copyright {
     color:white;
 }
 
-
 .companyInfo {
-    color:white;
-    font-family:playfair_displayregular,serif,sans-serif;
-
-
+    color: white;
+    font-family: playfair_displayregular, serif, sans-serif;
 }
+
 .companyInfo div{
     padding-bottom:10px;
     padding-left:10px;
@@ -874,11 +762,10 @@ i:hover{
     text-decoration:underline;
     color:white;
 }
+
 .address {
     color:#969696;
 }
-
-
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -909,7 +796,6 @@ Tablet Display
         padding: 4rem 0;
         display:block;
         width:100%;
-
     }
 
     .productLine {
@@ -917,96 +803,67 @@ Tablet Display
         flex-flow:row wrap;
         width:100%;
         justify-content:center;
-
-
-
-
     }
+
     .productLine div{
         height:250px;
         justify-content: center;
         align-self:center;
         display:flex;
-
-
-
-
     }
+
     .productTypes {
         display: flex;
-
-
-
     }
-
 
     .productTypes a {
         font-size:18px;
         text-decoration:none;
         color:white;
         display:flex;
-
-
-
     }
-
-
-
 
     .product {
         display: inline-block;
         text-align: center;
         width: 48%;
-
     }
+
     .product img {
         width: 100%;
         background-position:bottom;
     }
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        FLICKITY
+        TABLET FLICKITY SLIDER
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
     .mostLoved {
-
         width: 100%;
         padding: 4rem 0;
         height: 650px;
     }
 
     .productContainer{
-
-
         width: 100%;
-
     }
-
 
     .mostLoved h2{
         margin-top:20px;
         font-size: 24px;
-
     }
 
     .productGroup {
-
         height:450px;
         width:100%;
-
-
-
     }
 
     .product-wrapper {
-
-
         line-height:200%;
         width:38%;
         text-align: center;
-
-
     }
+
     .product-wrapper img{
         width:66%;
     }
@@ -1016,7 +873,6 @@ Tablet Display
         display: block;
         height: 100%;
         width:  100%;
-
     }
 
     .flickity-viewport {
@@ -1025,6 +881,9 @@ Tablet Display
         /*overflow: hidden;*/
         transform: translateX(-15%);
     }
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+          TABLET FOOTER
+      +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
     .footerContainer {
@@ -1033,11 +892,12 @@ Tablet Display
         display:inline-block;
         width:100%;
         text-align:center;
-
     }
+
     .companyInfo{
         padding-bottom:20px;
     }
+
     .social a{
         display:none;
 
@@ -1045,12 +905,7 @@ Tablet Display
     .social li{
         display:inline-block;
         padding:0.75rem;
-
     }
-
-
-
-
 
 }
 
@@ -1064,18 +919,15 @@ Small Display
 Small Display
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-
 @media all and (max-width:600px)  {
 
 
     .containerHeader {
-
         display:flex;
         flex-wrap: wrap;
         justify-content: space-around;
         padding-bottom: .5rem;
         padding-top: 1rem;
-
     }
 
     .logo { /*this floats the logo container to the left*/
@@ -1083,13 +935,11 @@ Small Display
         order: 1;
         flex-basis: 20%;
         padding-bottom:0.5rem
-
     }
-    .logo img{              /*sizes the image in the logo container*/
 
+    .logo img{              /*sizes the image in the logo container*/
         width:120px;
         height:auto;
-
     }
 
     .website-navigation {
@@ -1103,8 +953,6 @@ Small Display
         padding-top:1rem;
         border-top:solid;
         border-width: 0.5px;
-
-
     }
 
     .website-navigation ul{
@@ -1112,8 +960,6 @@ Small Display
         justify-content:space-between;
         border-top: 0;
         padding-top: 0;
-
-
     }
 
     .website-navigation li {
@@ -1122,9 +968,8 @@ Small Display
         justify-content: space-between;
         font-size: .9rem;
         margin-left:  1rem;
-
-
     }
+
     .website-navigation a{
         text-decoration:none;
         color:#b64036;
@@ -1132,15 +977,9 @@ Small Display
         text-transform: uppercase;
         font-weight: bold;
         font-family: ralewaymedium,serif,sans-serif;
-
-
-
     }
 
-
     .cart {                 /*this floats the cart container to the right*/
-
-
         flex-basis: 50%;
         order: 2;
         width: 48px;
@@ -1150,14 +989,11 @@ Small Display
         text-align: right;
     }
 
-
     .cart img{              /*sizes the image in the cart container*/
         width:50px;
     }
 
     button{
-
-
         background  : none;
         cursor  : pointer;
         color   : white;
@@ -1166,56 +1002,36 @@ Small Display
         padding     : 0px;
     }
 
-
-
-
     .springSummer {
-
         font-size: 50px;
         font-family: playfair_displayregular,serif,sans-serif;
     }
 
     .handCrafted {
-
-        align:center;
         height:300px;
         display:flex;
         justify-content:center;
-        content-align:center;
-
-
     }
-
-    /* =============================================================================================
-PRODUCT LINE
-
-================================= */
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    MOBILE TEXT LINKS WITHIN IMAGES OF PRODUCTS
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
     .productLine {
         display:flex;
         flex-flow:row wrap;
         width:100%;
         justify-content:center;
-
-
-
-
     }
+
     .productLine div{
         height:200px;
         justify-content: center;
         align-self:center;
         display:flex;
-
-
-
-
     }
+
     .productTypes {
         display: flex;
-
-
-
     }
 
     .productTypes a {
@@ -1227,11 +1043,9 @@ PRODUCT LINE
         text-transform:uppercase;
         font-family:ralewaymedium,serif,sans-serif;
         font-size: 22px;
-
-
     }
-    .mens {
 
+    .mens {
         background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
         url(assets/images/mens-category.jpg) no-repeat;
         flex:2 1 95.5%;
@@ -1239,12 +1053,7 @@ PRODUCT LINE
         background-size:cover;
         display:flex;
         margin-left:0.5%;
-
-
-
     }
-
-
 
     .trends {
         background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
@@ -1253,13 +1062,9 @@ PRODUCT LINE
         display:flex;
         margin-right:0.5%;
         margin-left:0.5%;
-
-
-
     }
 
     .trends a{
-
         align-self:center;
         text-transform:uppercase;
         font-family:ralewaymedium,serif,sans-serif;
@@ -1267,25 +1072,19 @@ PRODUCT LINE
     }
 
     .glasses {
-
         background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
         url(assets/images/glasses-category.jpg) no-repeat center center;
         flex:1 1 49.5%;
         display:flex;
         margin-right:0.5%;
-
-
-
     }
 
     .glasses a{
-
         align-self:center;
         text-transform:uppercase;
         font-family:ralewaymedium,serif,sans-serif;
         font-size: 22px;
     }
-
 
     .sale {
         background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
@@ -1295,12 +1094,9 @@ PRODUCT LINE
         margin-right:0.25%;
         margin-bottom:.50%;
         margin-left:0.5%;
-
-
     }
 
     .sale a{
-
         align-self:center;
         text-transform:uppercase;
         font-family:ralewaymedium,serif,sans-serif;
@@ -1317,7 +1113,6 @@ PRODUCT LINE
     }
 
     .bags a{
-
         align-self:center;
         text-transform:uppercase;
         font-family:ralewaymedium,serif,sans-serif;
@@ -1340,48 +1135,36 @@ PRODUCT LINE
         font-family:ralewaymedium,serif,sans-serif;
         font-size: 22px;
     }
-
-    /*========================================================*/
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    MOBILE MOST-LOVED PRODUCTS WITH SLIDER
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
     .mostLoved {
-
         width: 100%;
         padding: 4rem 0;
         height: 650px;
     }
 
     .productContainer{
-
-
         width: 100%;
-
     }
-
 
     .mostLoved h2{
         margin-top:20px;
         font-size: 24px;
-
     }
 
     .productGroup {
-
         height:450px;
         width:100%;
-
-
-
     }
 
     .product-wrapper {
-
-
         line-height:200%;
         width:100%;
         text-align: center;
-
-
     }
+
     .product-wrapper img{
         width:70%;
     }
@@ -1391,7 +1174,6 @@ PRODUCT LINE
         display: block;
         height: 100%;
         width:  100%;
-
     }
 
     .flickity-viewport {
@@ -1403,14 +1185,16 @@ PRODUCT LINE
 
 
 
-    /*===================================================*/
+
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    SUBSCRIBE FORM
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
     .subscribe{
         width:100%;
     }
 
     .subscribeForm{
-
         display: block;
         margin: 0.5rem auto 0;
         position: relative;
@@ -1435,11 +1219,12 @@ PRODUCT LINE
         font-size: 1rem;
         font-style: normal;
         line-height: 2;
-
     }
 
 
-    /*====================================================*/
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+         MOBILE FOOTER
+       +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
     .footerContainer {
         background:#242424;

@@ -9,7 +9,7 @@
  Thanks for subscribing
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- Thanks for subscribing
+ Thanks for subscribing  by Brett MacDonald
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 window.onload=function() {
@@ -20,11 +20,6 @@ window.onload=function() {
         }else{
             alert("Thanks for subscribing")
         }
-
-
-        // Should be triggered on form submit
-        //alert('Thanks for Subscribing');
-        // You must return false to prevent the default form behavior
         return false;
     }
 }
@@ -36,7 +31,7 @@ window.onload=function() {
  Shopping Cart
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- Shopping Cart
+ Shopping Cart from: https://www.youtube.com/watch?v=1Q74A6ZQxdY&list=PLoN_ejT35AEhzNoPStBzAkpqAu3YQwPj7
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
@@ -62,11 +57,6 @@ var Item = function(name,price,count){
      saveCart();
 }
 
-
-
-
-
-
 function countCart(){
     var totalCount=0
 for (var i in cart){
@@ -74,9 +64,6 @@ totalCount += cart[i].count
 }
 return totalCount;
 }
-
-
-
 
 function totalCart(){
 var totalCost = 0;
@@ -137,14 +124,9 @@ function displayCart(){
 }
 
 function revealCart(){
-    alert("Your cart has output");
+    alert(output);
 }
 
 
 
 
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-SMOOTH SCROLL
-    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
-/*! http://mths.be/smoothscroll v1.5.2 by @mathias */

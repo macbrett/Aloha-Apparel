@@ -11,15 +11,9 @@
                 crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
-
-
-
-
 </head>
 
 <body>
-
-
 
 <header class="containerHeader">
     <div class="logo">
@@ -46,12 +40,14 @@
     </div>
 </header>
 
+
 <section class="hero-banner">
     <div class="banner-text-container">
         <p class="newCollection">NEW COLLECTION</p>
         <p class="springSummer">Spring/Summer 2016</p>
     </div>
 </section>
+
 
 <section class="handCrafted"><a href="" name="about"></a>
     <div class="handCraftedcontainer">
@@ -61,8 +57,9 @@
         <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our
             current selection of products or sign up for updates below.</p>
         <hr>
-
     </div>
+
+
 </section>
 <section class="productLine">
     <div class="mens">
@@ -84,8 +81,6 @@
         <span class="productTypes"><a href="#">women's</a></span>
     </div>
 </section>
-
-
 
 
 <section class="mostLoved"><a href="" name="featured"></a>
@@ -186,8 +181,9 @@
                         <button class="button1"><a href="" class="addToCart" data-name="Cotton Yellow Tshirt" data-price="39.00">Add Item</a></button>
                     </div>
                 </div>
-      </div>
+            </div>
 </section>
+
 
 <section class="wave-banner" name="subscribe"><a href="" name="newsletter"></a>
     <div class="wave-text-container">
@@ -208,6 +204,7 @@
         </div>
     </div>
 </section>
+
 
 <footer>
     <div class="footerContainer">
@@ -254,9 +251,9 @@
 <script type="jquery/3.1.1.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
 <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!--FLICKITY-->
 
 
 <script>
@@ -269,6 +266,8 @@
 
     });
 </script>
+
+<!--SHOPPING CART  https://www.youtube.com/watch?v=1Q74A6ZQxdY&list=PLoN_ejT35AEhzNoPStBzAkpqAu3YQwPj7-->
 <script>
 
     $('.addToCart').click(function(event) {
@@ -288,15 +287,11 @@
         total = ""
         for (var i in cartArray) {
             output += "Your cart has " + cartArray[i].count + " unit(s) of " +
-                    cartArray[i].name + " @" + cartArray[i].price + " each" + "...and..." + ""
+                    cartArray[i].name + " @" + cartArray[i].price +"$" + " each" + "...and..." + ""
 
         }
-        console.log(output)
+
     }
-
-
-
-
 
     function totalCart(){
         var totalCost = 0;
@@ -306,14 +301,9 @@
         console.log("Your total is..." + "$"+totalCost);
     }
 
-
-
-
 </script>
 
-
-
-
+<!--SMOOTH SCROLL FROM:https://www.youtube.com/watch?v=-SnKQsM_BfQ-->
 
 <script>
     $(function(){
@@ -330,8 +320,6 @@
                 scrollTop: anchor.offset().top
 
             },'slow');
-
-
         });
     })
 </script>
