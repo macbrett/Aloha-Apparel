@@ -133,7 +133,7 @@ Fonts
 
 @font-face {
     font-family: "playfair_displayregular"; /*a name to be used later*/
-    url("assets/fonts/playfairdisplay-regular-webfont.otf"); /*URL to font*/
+url("assets/fonts/playfairdisplay-regular-webfont.otf"); /*URL to font*/
 }
 
 
@@ -247,7 +247,7 @@ h3 {
 HEADER
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-.containerHeader {
+.containerHeader { /************DESKTOP************/
 
     display: flex;
     justify-content: space-between;
@@ -256,19 +256,19 @@ HEADER
     padding-bottom: 0.75rem;
 }
 
-.logo {                 /*this floats the logo container to the left*/
+.logo {            /************DESKTOP************/     /*this floats the logo container to the left*/
 
     padding-top:10px;
     padding-left:20px;
 
 }
 
-.logo img{              /*sizes the image in the logo container*/
+.logo img{      /************DESKTOP************/        /*sizes the image in the logo container*/
     width:140px;
 
 }
 
-.website-navigation {
+.website-navigation {/************DESKTOP************/
 
     width:300px;
     display:flex;
@@ -277,7 +277,7 @@ HEADER
 
 }
 
-.website-navigation ul{
+.website-navigation ul{/************DESKTOP************/
     display:flex;
     justify-content:space-between;
     width:300px;
@@ -285,14 +285,14 @@ HEADER
 
 }
 
-.website-navigation li {
+.website-navigation li {/************DESKTOP************/
     align-item:center;
     display:flex;
     justify-content: space-between;
 
 
 }
-.website-navigation a{
+.website-navigation a{/************DESKTOP************/
     text-decoration:none;
     color:#e2574c;
     justify-content:space-between;
@@ -303,18 +303,18 @@ HEADER
 }
 
 
-.cart {                 /*this floats the cart container to the right*/
+.cart {      /************DESKTOP************/           /*this floats the cart container to the right*/
 
-        padding-top:10px;
-        padding-right:20px;
+    padding-top:10px;
+    padding-right:20px;
 }
 
 
-.cart img{              /*sizes the image in the cart container*/
+.cart img{     /************DESKTOP************/         /*sizes the image in the cart container*/
     width:55px;
 }
 
-button{
+button{/************DESKTOP************/
 
 
     background  : none;
@@ -333,21 +333,21 @@ HERO-BANNER
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
-.hero-banner {
+.hero-banner {/************DESKTOP************/
 
     background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
     url("assets/images/banner-girl.png") no-repeat center,
     url("assets/images/flower-bkgd.jpg");
     width:100%;
     height:550px;       /*settings for gradient taken from Mandi Wise Aloha site*/
-     /* see Stack Overflow http://stackoverflow.com/questions/16589519/use-css-gradient-over-background-image*/
+    /* see Stack Overflow http://stackoverflow.com/questions/16589519/use-css-gradient-over-background-image*/
     display:flex;
 
 
 
 }
 
-.banner-text-container {    /*box within the hero-banner*/
+.banner-text-container {   /************DESKTOP************/ /*box within the hero-banner*/
 
     width:100%;
     top:50%;
@@ -358,14 +358,14 @@ HERO-BANNER
 
 }
 
-.newCollection{
+.newCollection{/************DESKTOP************/
 
     font-size:20px;
     font-family:ralewaymedium;
 
 }
 
-.springSummer {
+.springSummer {/************DESKTOP************/
 
     font-size: 70px;
     font-family: playfair_displayregular;
@@ -442,7 +442,7 @@ PRODUCT-LINE TEXT
 
 
 .productTypes a {
-   font-size:18px;
+    font-size:18px;
     text-decoration:none;
     color:white;
     display:flex;
@@ -459,8 +459,8 @@ PRODUCT-LINE IMAGES
 
 .mens {
 
-background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
-url(assets/images/mens-category.jpg) no-repeat;
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+    url(assets/images/mens-category.jpg) no-repeat;
     flex:2 1 49%;
     background-size:cover;
     display:flex;
@@ -482,8 +482,8 @@ url(assets/images/mens-category.jpg) no-repeat;
 
 
 .trends {
-background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
-url(assets/images/trends-category.jpg) no-repeat center center;
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+    url(assets/images/trends-category.jpg) no-repeat center center;
     flex:1 1 24.5%;
     display:flex;
     margin-right:0.5%;
@@ -503,8 +503,8 @@ url(assets/images/trends-category.jpg) no-repeat center center;
 
 .glasses {
 
-background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
-url(assets/images/glasses-category.jpg) no-repeat center center;
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+    url(assets/images/glasses-category.jpg) no-repeat center center;
     flex:1 1 24%;
     display:flex;
     margin-bottom:0.5%;
@@ -523,8 +523,8 @@ url(assets/images/glasses-category.jpg) no-repeat center center;
 
 
 .sale {
-background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
-url(assets/images/sale-category.jpg) no-repeat center center;
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+    url(assets/images/sale-category.jpg) no-repeat center center;
     flex:2 1 24%;
     display:flex;
     margin-right:0.50%;
@@ -545,8 +545,8 @@ url(assets/images/sale-category.jpg) no-repeat center center;
 }
 
 .bags {
-background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
-url(assets/images/bags-category.jpg) no-repeat center center;
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+    url(assets/images/bags-category.jpg) no-repeat center center;
     flex:1 1 24.5%;
     display:flex;
     margin-right:0.5%;
@@ -563,8 +563,8 @@ url(assets/images/bags-category.jpg) no-repeat center center;
 }
 
 .women {
-background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
-url(assets/images/womens-category.jpg) no-repeat center center;
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+    url(assets/images/womens-category.jpg) no-repeat center center;
     flex:1 1 49.25%;
     display:flex;
     margin-right:0.5%;
@@ -690,7 +690,7 @@ FLICKITY
 }
 
 .flickity-viewport {
-position:relative;
+    position:relative;
     width:150%;
     transform: translateX(-40%);
     overflow: hidden;
@@ -963,9 +963,9 @@ Tablet Display
         background-position:bottom;
     }
 
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    FLICKITY
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        FLICKITY
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
     .mostLoved {
 
@@ -1222,7 +1222,10 @@ PRODUCT LINE
         text-decoration:none;
         color:white;
         display:flex;
-
+        align-self:center;
+        text-transform:uppercase;
+        font-family:ralewaymedium;
+        font-size: 22px;
 
 
     }
@@ -1240,13 +1243,13 @@ PRODUCT LINE
 
     }
 
-    .mens a{
+    /*.mens a{
 
         align-self:center;
         text-transform:uppercase;
         font-family:ralewaymedium;
         font-size: 22px;
-    }
+    }*/
 
 
     .trends {
@@ -1409,7 +1412,7 @@ PRODUCT LINE
     /*===================================================*/
 
     .subscribe{
-width:100%;
+        width:100%;
     }
 
     .subscribeForm{
@@ -1458,14 +1461,14 @@ width:100%;
 
     }
     .social a{
-       display:none;
+        display:none;
 
     }
     .social li{
         display:inline-block;
         padding:0.75rem;
 
-}
+    }
 
 }
 

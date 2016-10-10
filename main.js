@@ -14,10 +14,16 @@
 
 window.onload=function() {
     document.getElementById('formId').onsubmit=function() {
-        /* do what you want with the form */
+        var input = document.getElementById("your-email").value;
+        if( input.length==0){
+            alert("Please enter your email")
+        }else{
+            alert("Thanks for subscribing")
+        }
+
 
         // Should be triggered on form submit
-        alert('Thanks for Subscribing');
+        //alert('Thanks for Subscribing');
         // You must return false to prevent the default form behavior
         return false;
     }
