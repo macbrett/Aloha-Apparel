@@ -8,23 +8,34 @@ This work was completed in 14 days and involved applying concepts learned over t
 using css to style, and media queries.
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Highlights
+Triumphs
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-1. Was able to use js and jQuery to add items to cart. Clicking cart button will alert user to the items in the cart and total cost.
+1. Was able to use js and jQuery to add items to cart.
+Clicking cart button will alert user to the items in the cart and total cost.
 
 2. Felicity slider installed successfully
 
 3. Subscribe button functioning properly
 
+4. slow scroll working
+
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Challenges
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+1. html validator states that my anchors should not be placed within a button.
+I need to research how to style anchor tag to look like button.
 
-1. html validator states that an anchor should not be placed within a button. I need to research how to style anchor tag to look like button.
-2. How to create a shopping cart dialogue box and not use alert
-3. The header in mobile does not look quite right. Having trouble positioning logo and cart.
+2. Although I have media queries working, the css is not organized
+properly on the page. I tried to fix but site kept breaking.
+I will know for next time to start at mobile at the top.
+
+3. How to create a shopping cart dialogue box and not use alert!!
+
+4. The header in mobile does not look quite right. Having trouble
+positioning logo and cart.
+
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Code Example
