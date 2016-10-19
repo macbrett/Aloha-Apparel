@@ -349,6 +349,7 @@ HERO-BANNER
 .newCollection{/************DESKTOP************/
     font-size:20px;
     font-family:ralewaymedium,serif,sans-serif;
+    text-transform: capitalize;
 }
 
 .springSummer {/************DESKTOP************/
