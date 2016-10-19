@@ -133,7 +133,7 @@ Fonts
 
 @font-face {
     font-family: "playfair_displayregular";
-url("assets/fonts/playfairdisplay-regular-webfont.otf");
+    src: url("assets/fonts/playfairdisplay-regular-webfont.otf");
 }
 
 
@@ -354,6 +354,7 @@ HERO-BANNER
 .springSummer {/************DESKTOP************/
     font-size: 70px;
     font-family: playfair_displayregular,serif,sans-serif;
+    text-transform: uppercase;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
