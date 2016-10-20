@@ -748,6 +748,9 @@ i:hover{
 .copyright {
     color:white;
 }
+.copyright:before {
+    content: "\00a9";
+}
 
 .companyInfo {
     color: white;
