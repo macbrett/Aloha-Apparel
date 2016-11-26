@@ -20,7 +20,7 @@
     <div class="logo">
         <img src="assets/images/aloha-logo.svg" alt="aloha image">
     </div>
-    <div class="website-navigation">
+    <nav class="website-navigation">
         <ul>
             <li>
                 <a href="#about">About</a>
@@ -35,21 +35,21 @@
                 <a href="#newsletter">Updates</a>
             </li>
         </ul>
-    </div>
-    </main>
+
+
+    </nav>
+
     <div class="cart" id="shoppingCart">
         <button onclick="revealCart()"><img src="assets/images/cart-icon.svg" alt="cart-icon"></button>
     </div>
 </header>
 
-
 <section class="hero-banner">
     <div class="banner-text-container">
-        <p class="newCollection">NEW COLLECTION</p>
+        <p class="newCollection">New Collection</p>
         <p class="springSummer">Spring/Summer 2016</p>
     </div>
 </section>
-
 
 <section class="handCrafted"><a href="" name="about"></a>
     <div class="handCraftedcontainer">
@@ -60,9 +60,8 @@
             current selection of products or sign up for updates below.</p>
         <hr>
     </div>
-
-
 </section>
+
 <section class="productLine">
     <div class="mens">
         <span class="productTypes"><a href="#" name="products">men's</a></span>
@@ -84,7 +83,6 @@
     </div>
 </section>
 
-
 <section class="mostLoved"><a href="" name="featured"></a>
     <div class="productContainer">
             <h2>Most-Loved
@@ -98,7 +96,7 @@
                             <li class="productDescription">Stretch Knit Dress</li>
                             <li class="productPrice">$169.00</li>
                         </ul>
-                        <button class="button1"><a href="" class="addToCart" data-name="Stretch Knit Dress" data-price="169.00">Add Item</a></button>
+                        <span class="button1"><a href="" class="addToCart" data-name="Stretch Knit Dress" data-price="169.00">Add Item</a></span>
                     </div>
                     <div class="product-wrapper">
 
@@ -109,7 +107,7 @@
                             <li class="productDescription">Cotton Blue Shirt</li>
                             <li class="productPrice">$89.00</li>
                         </ul>
-                        <button class="button1"><a href="" class="addToCart" data-name="Cotton Blue Shirt" data-price="89.00">Add Item</a></button>
+                        <span class="button1"><a href="" class="addToCart" data-name="Cotton Blue Shirt" data-price="89.00">Add Item</a></span>
                     </div>
 
                     <div class="product-wrapper">
@@ -121,7 +119,7 @@
                             <li class="productDescription">Checked Stretched Dress</li>
                             <li class="productPrice" id="dressPrice">$129.00</li>
                         </ul>
-                        <button class="button1"><a href="" class="addToCart" data-name="Checked Stretched Dress" data-price="129.00">Add Item</a></button>
+                        <span class="button1"><a href="" class="addToCart" data-name="Checked Stretched Dress" data-price="129.00">Add Item</a></span>
                     </div>
 
                     <div class="product-wrapper">
@@ -133,7 +131,7 @@
                             <li class="productDescription">Blue Hipster Backpack</li>
                             <li class="productPrice">$69.00</li>
                         </ul>
-                        <button class="button1"><a href="" class="addToCart" data-name="Blue Hipster Backpack" data-price="69.00">Add Item</a></button>
+                        <span class="button1"><a href="" class="addToCart" data-name="Blue Hipster Backpack" data-price="69.00">Add Item</a></span>
                     </div>
                     <div class="product-wrapper">
 
@@ -144,7 +142,7 @@
                             <li class="productDescription">Denim Overall Shorts</li>
                             <li class="productPrice" >$89.00</li>
                         </ul>
-                        <button class="button1"><a href="" class="addToCart" data-name="Denim Overall Shorts" data-price="69.00">Add Item</a></button>
+                        <span class="button1"><a href="" class="addToCart" data-name="Denim Overall Shorts" data-price="69.00">Add Item</a></button>
                     </div>
 
                     <div class="product-wrapper">
@@ -156,7 +154,7 @@
                             <li class="productDescription">Pink Dotted Dress</li>
                             <li class="productPrice" >$99.00</li>
                         </ul>
-                        <button class="button1"><a href="" class="addToCart" data-name="Pink Dotted Dress" data-price="99.00">Add Item</a></button>
+                        <span class="button1"><a href="" class="addToCart" data-name="Pink Dotted Dress" data-price="99.00">Add Item</a></span>
                     </div>
 
                     <div class="product-wrapper">
@@ -168,7 +166,7 @@
                             <li class="productDescription">Blue Silk Dress</li>
                             <li class="productPrice" >$119.00</li>
                         </ul>
-                        <button class="button1"><a href="" class="addToCart" data-name="Blue Silk Dress" data-price="119.00">Add Item</a></button>
+                        <span class="button1"><a href="" class="addToCart" data-name="Blue Silk Dress" data-price="119.00">Add Item</a></span>
                     </div>
 
                     <div class="product-wrapper">
@@ -180,12 +178,11 @@
                             <li class="productDescription">Cotton Yellow T-shirt</li>
                             <li class="productPrice" >$39.00</li>
                         </ul>
-                        <button class="button1"><a href="" class="addToCart" data-name="Cotton Yellow Tshirt" data-price="39.00">Add Item</a></button>
+                        <span class="button1"><a href="" class="addToCart" data-name="Cotton Yellow Tshirt" data-price="39.00">Add Item</a></span>
                     </div>
                 </div>
             </div>
 </section>
-
 
 <section class="wave-banner" name="subscribe"><a href="" name="newsletter"></a>
     <div class="wave-text-container">
@@ -199,14 +196,13 @@
         <div class="subscribe">
             <div class="subscribeForm">
                 <form id="formId">
-                    <input type="email" name="your_email" id="your-email" value="" placeholder="Your Email">
+                    <input type="email" name="your_email" id="your-email" value="" placeholder="Your Email" aria-label="Subscribe Email Input">
                     <input type="submit" name="subscribe" value="Subscribe" id="subscribe">
                 </form>
             </div>
         </div>
     </div>
 </section>
-
 
 <footer>
     <div class="footerContainer">
@@ -270,62 +266,7 @@
     });
 </script>
 
-<!--SHOPPING CART  https://www.youtube.com/watch?v=1Q74A6ZQxdY&list=PLoN_ejT35AEhzNoPStBzAkpqAu3YQwPj7-->
-<script>
 
-    $('.addToCart').click(function(event) {
-        event.preventDefault();
-        var name = $(this).attr("data-name");
-        var price = Number($(this).attr("data-price"));
-
-        addItemToCart(name, price, 1);
-        displayCart();
-        totalCart();
-    });
-
-
-    function displayCart() {
-        var cartArray = listCart();
-        output = ""
-        total = ""
-        for (var i in cartArray) {
-            output += "Your cart has " + cartArray[i].count + " unit(s) of " +
-                    cartArray[i].name + " @" + cartArray[i].price +"$" + " each" + "...and..." + ""
-
-        }
-
-    }
-
-    function totalCart(){
-        var totalCost = 0;
-        for(var i in cart){
-            totalCost += cart[i].price * cart[i].count;
-        }
-        console.log("Your total is..." + "$"+totalCost);
-    }
-
-</script>
-
-<!--SMOOTH SCROLL FROM:https://www.youtube.com/watch?v=-SnKQsM_BfQ-->
-
-<script>
-    $(function(){
-        $('a[href^="#"]').click(function(e){
-
-            var target = $(this).attr('href')
-            var strip = target.slice(1);
-            var anchor = $("a[name='" + strip + "']");
-
-            e.preventDefault();
-
-            $('html, body').animate({
-
-                scrollTop: anchor.offset().top
-
-            },'slow');
-        });
-    })
-</script>
 
 
 </body>

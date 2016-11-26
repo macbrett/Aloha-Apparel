@@ -1,23 +1,17 @@
 
 Synopsis
 
-This website is part 2 of assignment 1 for Red Academy's Web Development Program.
+Aloha Apparel is an e-commerce site and part 2 of assignment 1 for Red Academy's Web Development Program.
 This work was completed in 14 days and involved applying concepts learned over the week, such as html
 using css to style, and media queries.
 
+The following tasks were required for the site.
 
-Triumphs
-
-
-
-2. Felicity slider installed successfully
-
-3. Subscribe button functioning properly
-
-4. slow scroll working
-
-
-
+The use of flexbox to position containers and elements.
+The use of relative and absolute poistioning for text 
+Setting up a jQuery Slider called Flickity
+Importing and rendering custom fonts
+Using media queries to design a website using the Mobile First design principle
 
 
 Code Example
@@ -76,14 +70,8 @@ The project makes use of combined inages and background grandients:
     url("assets/images/flower-bkgd.jpg");
 
 
-
-
- 
-
 The website is designed to quickly establish our html and css coding skills. Part two
 incorporates jquery and javascript.
-
-
 
 
 Installation

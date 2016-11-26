@@ -133,7 +133,7 @@ Fonts
 
 @font-face {
     font-family: "playfair_displayregular";
-url("assets/fonts/playfairdisplay-regular-webfont.otf");
+    src: url("assets/fonts/playfairdisplay-regular-webfont.otf");
 }
 
 
@@ -354,6 +354,7 @@ HERO-BANNER
 .springSummer {/************DESKTOP************/
     font-size: 70px;
     font-family: playfair_displayregular,serif,sans-serif;
+    text-transform: uppercase;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -595,7 +596,7 @@ MOST-LOVED PRODUCTS WITH SLIDER
     border: 0;
     border-radius: 25px;
     font-family: ralewaylight,serif,sans-serif;
-    font-size: 0.8rem;
+
     font-style: normal;
     line-height: 2;
 }
@@ -1252,3 +1253,7 @@ Small Display
 }
 
 
+ul p{
+
+    max-width:50px;
+}
