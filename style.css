@@ -218,13 +218,13 @@ CUSTOM CSS
 BODY
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 html {
-    color:#2D2D2D;
+    color:#2d2d2d;
 }
 
 body {
     font-family:ralewaylight,serif,sans-serif;        /*setting the default body font to Raleway Light*/
     font-size:16px;
-    font-color:#2D2D2D;
+    font-color:#2d2d2d;
 
 }
 
