@@ -1,18 +1,14 @@
 
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Synopsis
- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 This website is part 2 of assignment 1 for Red Academy's Web Development Program.
 This work was completed in 14 days and involved applying concepts learned over the week, such as html
 using css to style, and media queries.
 
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Triumphs
- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-1. Was able to use js and jQuery to add items to cart.
-Clicking cart button will alert user to the items in the cart and total cost.
+Triumphs
+
+
 
 2. Felicity slider installed successfully
 
@@ -21,25 +17,11 @@ Clicking cart button will alert user to the items in the cart and total cost.
 4. slow scroll working
 
 
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Challenges
- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-1. html validator states that my anchors should not be placed within a button.
-I need to research how to style anchor tag to look like button.
-
-2. Although I have media queries working, the css is not organized
-properly on the page. I tried to fix but site kept breaking.
-I will know for next time to start at mobile at the top.
-
-3. How to create a shopping cart dialogue box and not use alert!!
-
-4. The header in mobile does not look quite right. Having trouble
-positioning logo and cart.
 
 
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 Code Example
- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+ 
 
  window.onload=function() {
      document.getElementById('formId').onsubmit=function() {
@@ -95,18 +77,17 @@ The project makes use of combined inages and background grandients:
 
 
 
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Motivation
- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+ 
 
 The website is designed to quickly establish our html and css coding skills. Part two
 incorporates jquery and javascript.
 
 
 
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 Installation
- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+ 
 
 The site can be viewed at GitHub @ :https://github.com/macbrett?tab=repositories
 
